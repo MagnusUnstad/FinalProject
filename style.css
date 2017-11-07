@@ -8,7 +8,7 @@ body {
 
 .mainContentBox {
 	width:60%;
-	height:1000px; /* TEMPORARY */
+	height:1000px; /* MIDLERTIDIG */
 	background-color:#f2f2f2;
 	margin-left:5%;
 	margin-top:3%;
@@ -39,7 +39,6 @@ body {
 }
 
 .sideBarBox {
-	height:600px; /* TEMPORARY */
 	width:20%;
 	background-color:#f2f2f2;
 	float:right;
