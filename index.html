@@ -48,8 +48,8 @@
 			</nav>
 		</div>
 		
-		<div id="spacer" style="height:50px"></div> <!-- spacer div for å få litt margin på bunn -->
-		<!-- må være på bunnen for at det skal fungere. kan fikses med en onload-funksjon -->
+		<div style="height:50px"></div> <!-- spacer div for å få litt margin på bunn -->
+		<!-- må være på bunnen for at det skal fungere. kan (bør) fikses med en onload-funksjon -->
 		<script>
 			/* Dette scriptet lager underlinjer med gradient */
 
@@ -57,7 +57,7 @@
 			let lis = document.getElementById("sBB").getElementsByTagName("li");
 				for (let i=0;i<lis.length;i++) {
 					gradient-= (1/lis.length);
-					document.getElementsByTagName("li")[i].style.borderBottom = "2px solid rgba(240,52,52," + gradient + ")";
+					document.getElementById("sBB").getElementsByTagName("li")[i].style.borderBottom = "2px solid rgba(240,52,52," + gradient + ")";
 				}
 			
 		</script>
