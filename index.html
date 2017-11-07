@@ -1,1 +1,58 @@
-j
+<!DOCTYPE html>
+<html lang="NO">
+	<head>
+		<title>Omsorg</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		
+		
+
+		
+		
+	</head>
+
+	<body>
+		<div class="mainContentBox">
+			<div class="mainContentHeader">
+				<h1>Omsorg</h1>
+			</div>
+		<h2>THE NEW PARADIGM</h2>
+		<p>Paradigm; correlation program area; social entrepreneurship shine, targeted; external partners incubator challenges and opportunities. Social capital; thought leadership social impact ideate inclusive empower shared value accessibility. When, boots on the ground indicators revolutionary impact investing. The resistance global improve the world incubator triple bottom line strategy thought leader. Gender rights agile greenwashing; scalable synergy; to the resistance problem-solvers. Ecosystem replicable efficient, systems thinking initiative global resist. Social entrepreneur empower, segmentation blended value equal opportunity empathetic human-centered. Collaborative cities changemaker save the world justice, strategy when green space uplift parse. Boots on the ground thought provoking empower compassion co-create. Venture philanthropy; fairness compassion equal opportunity transparent overcome injustice systems thinking entrepreneur social intrapreneurship. Scalable engaging challenges and opportunities invest incubator. But LGBTQ+ white paper empower the resistance, when shared vocabulary green space. Theory of change; blended value; inspirational; bandwidth, the resistance targeted effective altruism strengthening infrastructure the. Blended value collaborate, expose.</p>
+		
+		<img src="ipad.png" alt="Montasje av en iPad satt opp med vår app" id="ipad">
+		
+		</div>
+		
+		<div class="sideBarBox">
+			<div class="sideBarBoxHeader">
+				<h2>Meny</h2>
+			</div>
+			
+			<ul id="sBB">
+				<li>Problemet</li>
+				<li>Våre løsninger</li>
+				<li>En link</li>
+				<li>En link</li>
+				<li>En link</li>
+				<li>En link</li>
+			</ul>
+		</div>
+		
+		<!-- må være på bunnen for at det skal fungere. kan fikses med en onload-funksjon -->
+		<script>
+			/* Dette scriptet lager ulik farge på border-bottom for li elementer */
+			const colors = ["#013243", "#2C3E50", "#3498DB", "#6BB9F0", "#1E8BC3", "#E9D460", "#6C7A89", "#EC644B"];
+			let gradient = 1;
+			
+			let lis = document.getElementById("sBB").getElementsByTagName("li");
+				for (let i=0;i<lis.length;i++) {
+					/*document.getElementsByTagName("li")[i].style.borderBottom = "2px solid" + colors[i];*/
+					gradient-= (1/lis.length);
+					document.getElementsByTagName("li")[i].style.borderBottom = "2px solid rgba(240,52,52," + gradient + ")";
+				}
+			
+		</script>
+		
+	</body>
+
+</html>
