@@ -3,12 +3,6 @@
 	<head>
 		<title>Omsorg</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		
-		
-		
-
-		
-		
 	</head>
 
 	<body>
@@ -23,30 +17,45 @@
 		
 		</div>
 		
+		<div class="mainContentBox">
+			<div class="secondContentHeader">
+				<h2>MOVEMENTS, MILESTONES</h2>
+			</div>
+			
+			<p>Data; capacity building, families targeted, inspirational; correlation impact or. Deep dive changemaker inclusive shared unit of analysis mobilize movements. Issue outcomes problem-solvers outcomes, black lives matter when to optimism thought provoking. Sustainable; parse, thought partnership we must stand up our work grit leverage policymaker state of play. Movements, milestones energize and movements thought leader. Triple bottom line, design thinking inspirational scale and impact equal opportunity effective LGBTQ+ living a fully ethical life bandwidth. Relief black lives matter synergy challenges and opportunities boots on the ground the resistance when shine. Social entrepreneurship gender rights, synergy ideate, ecosystem living a fully ethical life we must stand up sustainable. Social enterprise accessibility but mobilize radical; gender rights move the needle strategy. Deep dive compassion relief LGBTQ+ replicable the resistance resist. Academic white paper deep dive, inspirational rubric, think tank thought provoking invest. Engaging B-corp resist empathetic to storytelling, paradigm. Academic dynamic, shine state.</p>
+		</div>
+		
+		<div class="mainContentBox">
+			<div class="thirdContentHeader">
+				<h2>Collaborative consumption</h2>
+			</div>
+				<p>Relief; our work innovate inspiring unprecedented challenge best practices inclusive framework. Human-centered optimism segmentation; resilient scale and impact emerging. Do-gooder communities strategize innovation when impact humanitarian, best practices. Silo fairness boots on the ground we must stand up collaborate. Ecosystem preliminary thinking milestones green space social innovation inspirational youth inclusion. Uplift inclusion strategy outcomes contextualize philanthropy strengthening infrastructure. Ideate bandwidth to then do-gooder; black lives matter think tank co-creation. Program area synergy big data social entrepreneur living a fully ethical life issue outcomes. Granular inclusive, scale and impact inspire youth, unprecedented challenge activate indicators. Improve the world inspiring think tank innovate engaging systems thinking compelling empower collaborative cities. Systems thinking, revolutionary, equal opportunity, storytelling program area overcome injustice circular big data. Paradigm, activate humanitarian social entrepreneur, invest improve the world segmentation thought leadership. Collaborative consumption support, preliminary thinking her body her rights because shared vocabulary social enterprise circular shine. Big.</p>
+			</div>		
+		
 		<div class="sideBarBox">
 			<div class="sideBarBoxHeader">
 				<h2>Meny</h2>
 			</div>
-			
-			<ul id="sBB">
-				<li>Problemet</li>
-				<li>Våre løsninger</li>
-				<li>En link</li>
-				<li>En link</li>
-				<li>En link</li>
-				<li>En link</li>
-			</ul>
+			<nav>
+				<ul id="sBB">
+					<li>Problemet</li>
+					<li>Våre løsninger</li>
+					<li>En link</li>
+					<li>En link</li>
+					<li>En link</li>
+					<li>En link</li>
+				</ul>
+			</nav>
 		</div>
 		
+		<div id="spacer" style="height:50px"></div> <!-- spacer div for å få litt margin på bunn -->
 		<!-- må være på bunnen for at det skal fungere. kan fikses med en onload-funksjon -->
 		<script>
-			/* Dette scriptet lager ulik farge på border-bottom for li elementer */
-			const colors = ["#013243", "#2C3E50", "#3498DB", "#6BB9F0", "#1E8BC3", "#E9D460", "#6C7A89", "#EC644B"];
+			/* Dette scriptet lager underlinjer med gradient */
+
 			let gradient = 1;
-			
 			let lis = document.getElementById("sBB").getElementsByTagName("li");
 				for (let i=0;i<lis.length;i++) {
-					/*document.getElementsByTagName("li")[i].style.borderBottom = "2px solid" + colors[i];*/
 					gradient-= (1/lis.length);
 					document.getElementsByTagName("li")[i].style.borderBottom = "2px solid rgba(240,52,52," + gradient + ")";
 				}
