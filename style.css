@@ -104,6 +104,10 @@ body {
 	margin-right:20%;
 	border-bottom: 2px solid rgb(240,52,52);
 }
+.sideBarBox a {
+	text-decoration:none;
+	color:#333333;
+}
 
 .sideBarBox ul {
 	list-style:none;
