@@ -54,5 +54,9 @@ body {
 }
 
 .video{
-  height: 300px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  max-width: 1000px;
 }
