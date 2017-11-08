@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.Navforside {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  list-style: none;
+  padding-top: 20px;
+}
+
+.Navforside li {
+  width: 10%;
+  min-width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  border-right: solid 1.5px;
+  border-left: solid 1.5px;
+}
+
+.Navforside ul {
+  padding: 0;
+}
+
+.Navforside a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.Navforside a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+
+  .Navforside {
+    padding-top: 35px;
+  }
+
+  .Navforside li {
+    width: 23%;
+  }
+
+  .Navforside a {
+    font-size: 30px;
+  }
+}
+
+.video{
+  height: 300px;
+}
