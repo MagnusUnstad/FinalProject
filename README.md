@@ -20,4 +20,4 @@ https://docs.google.com/document/d/1GMWw7EEfM2p_euxS_mP8c8-0IzjmpzphD9UtjujHbGI/
 https://docs.google.com/forms/d/e/1FAIpQLSekBWQJOatI2MdJxEb8pcHAx23Hg4Lkx3dFOZofkIY_OYpHWQ/viewform
 
 
-![Screenshot](https://imgur.com/a/E1wfJ)
+![alt text](https://imgur.com/a/E1wfJ)
