@@ -8,7 +8,7 @@
 	<body>
 		<div class="mainContentBox">
 			<div class="mainContentHeader">
-				<h1>Omsorg</h1>
+					<h1>Omsorg</h1>
 			</div>
 		<h2>THE NEW PARADIGM</h2>
 		<p>Paradigm; correlation program area; social entrepreneurship shine, targeted; external partners incubator challenges and opportunities. Social capital; thought leadership social impact ideate inclusive empower shared value accessibility. When, boots on the ground indicators revolutionary impact investing. The resistance global improve the world incubator triple bottom line strategy thought leader. Gender rights agile greenwashing; scalable synergy; to the resistance problem-solvers. Ecosystem replicable efficient, systems thinking initiative global resist. Social entrepreneur empower, segmentation blended value equal opportunity empathetic human-centered. Collaborative cities changemaker save the world justice, strategy when green space uplift parse. Boots on the ground thought provoking empower compassion co-create. Venture philanthropy; fairness compassion equal opportunity transparent overcome injustice systems thinking entrepreneur social intrapreneurship. Scalable engaging challenges and opportunities invest incubator. But LGBTQ+ white paper empower the resistance, when shared vocabulary green space. Theory of change; blended value; inspirational; bandwidth, the resistance targeted effective altruism strengthening infrastructure the. Blended value collaborate, expose.</p>
@@ -33,7 +33,7 @@
 			</div>		
 		
 		<div class="sideBarBox">
-			<div class="sideBarBoxHeader">
+			<div class="sideBarBoxHeader" id="scrollColor">
 				<h2>Meny</h2>
 			</div>
 			<nav>
@@ -52,14 +52,25 @@
 		<!-- må være på bunnen for at det skal fungere. kan (bør) fikses med en onload-funksjon -->
 		<script>
 			/* Dette scriptet lager underlinjer med gradient */
-
-			let gradient = 1;
-			let lis = document.getElementById("sBB").getElementsByTagName("li");
-				for (let i=0;i<lis.length;i++) {
-					gradient-= (1/lis.length);
-					lis[i].style.borderBottom = "2px solid rgba(240,52,52," + gradient + ")";
-				}
+			function gradient() {
+				let gradient = 1;
+				let lis = document.getElementById("sBB").getElementsByTagName("li");
+					for (let i=0;i<lis.length;i++) {
+						gradient-= (1/lis.length);
+						lis[i].style.borderBottom = "2px solid rgba(240,52,52," + gradient + ")";
+					}
+			}
+			gradient();
 			
+			function scrollColor() {
+				const startColor = [236,100,75];
+				const secondColor = [68,108,179];
+				let scroll = document.body.scrollTop;
+				console.log(scroll);
+				const scrollBar = document.getElementById("scrollColor")
+				scrollBar.style.backgroundColor;
+			}
+			scrollColor();
 		</script>
 		
 	</body>
