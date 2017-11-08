@@ -6,6 +6,8 @@
 	</head>
 
 	<body>
+	
+	
 		<div class="mainContentBox">
 			<div class="mainContentHeader">
 				<div class="logo"></div>
@@ -70,7 +72,16 @@
 				const scrollBar = document.getElementById("scrollColor")
 				scrollBar.style.backgroundColor;
 			}
-			scrollColor();
+			
+			/* Script for tab-funksjon. Kjører koden i if-strukturen hvis man trykker på tab */
+			document.addEventListener("keydown", function(event) {
+			  if (event.keyCode == 9) {
+				alert("allright");
+			  }
+			});
+			
+		
+			
 		</script>
 		
 	</body>
