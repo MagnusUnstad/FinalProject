@@ -92,6 +92,10 @@ body {
 	display:inline-block;
 	float:right;
 }
+.sideBarBox a {
+	text-decoration:none;
+	color:#333333;
+}
 .sideBarBoxHeader h2{
 	color:white;
 	padding-left:1em;
@@ -119,3 +123,14 @@ body {
 	margin-right:5%;
 }
 
+#accessibilityBox {
+	position:absolute;
+/*	visibility:hidden; */
+	width:200px;
+	height:200px;
+	background-color:white;
+	border: 1px solid black;
+}
+.hidden {
+	visibility:hidden;
+}
