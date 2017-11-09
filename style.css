@@ -107,6 +107,7 @@ body {
 	font-weight:bold;
 	margin-right:20%;
 	border-bottom: 2px solid #446CB3;
+	transition:all 0.3s ease-in-out;
 }
 
 .sideBarBox ul {
@@ -115,6 +116,7 @@ body {
 }
 .sideBarBox li:hover {
 	background-color:#ECECEC;
+	
 }
 #ipad {
 	float:right;
@@ -133,4 +135,7 @@ body {
 }
 .hidden {
 	visibility:hidden;
+}
+.activelink {
+	color:green !important;
 }

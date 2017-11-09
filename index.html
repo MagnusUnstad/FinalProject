@@ -16,7 +16,7 @@
 		
 		</div>
 	
-		<div class="mainContentBox">
+		<div class="mainContentBox" id="del1">
 			<div class="mainContentHeader">
 				<div class="logo"></div>
 			</div>
@@ -27,7 +27,7 @@
 		
 		</div>
 		
-		<div class="mainContentBox">
+		<div class="mainContentBox" id="del2">
 			<div class="secondContentHeader">
 				<h2>MOVEMENTS, MILESTONES</h2>
 			</div>
@@ -35,7 +35,7 @@
 			<p>Data; capacity building, families targeted, inspirational; correlation impact or. Deep dive changemaker inclusive shared unit of analysis mobilize movements. Issue outcomes problem-solvers outcomes, black lives matter when to optimism thought provoking. Sustainable; parse, thought partnership we must stand up our work grit leverage policymaker state of play. Movements, milestones energize and movements thought leader. Triple bottom line, design thinking inspirational scale and impact equal opportunity effective LGBTQ+ living a fully ethical life bandwidth. Relief black lives matter synergy challenges and opportunities boots on the ground the resistance when shine. Social entrepreneurship gender rights, synergy ideate, ecosystem living a fully ethical life we must stand up sustainable. Social enterprise accessibility but mobilize radical; gender rights move the needle strategy. Deep dive compassion relief LGBTQ+ replicable the resistance resist. Academic white paper deep dive, inspirational rubric, think tank thought provoking invest. Engaging B-corp resist empathetic to storytelling, paradigm. Academic dynamic, shine state.</p>
 		</div>
 		
-		<div class="mainContentBox">
+		<div class="mainContentBox" id="del3">
 			<div class="thirdContentHeader">
 				<h2>COLLABORATIVE CONSUMPTION</h2>
 			</div>
@@ -102,7 +102,42 @@
 					box.classList.toggle("hidden");
 				}
 			}
-		
+			//Henter scrollposisjon og kjører colorChanger med y-verdien
+			function activeLink() {
+				let lis = document.getElementById("sBB").getElementsByTagName("li");
+				window.addEventListener('scroll', function(e){
+					let scrollPosition = window.scrollY;
+					colorChanger(scrollPosition);
+				});
+				
+				function colorChanger(y) {
+					let styleTo = "rgba(240,52,52,1)";
+					if (y > 0 && y < 800) {
+						clearColors(0);
+						lis[0].style.color = styleTo;
+					} else if (y > 800 && y < 1400) {
+						clearColors(1);
+						lis[1].style.color = styleTo;
+					} else if (y > 1400) {
+						clearColors(2);
+						lis[2].style.color = styleTo;
+					}
+					
+				}
+				//Sørger for at linkene som ikke er aktive er sorte
+				function clearColors(k) {
+					
+					for (let i=0;i<lis.length;i++) {
+						if (!(k==i)) {
+							lis[i].style.color = "#333333";
+						}
+					}
+				}
+			}
+			activeLink();
+			
+			
+			
 			
 		</script>
 		
