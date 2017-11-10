@@ -28,7 +28,7 @@ body {
 .mainContentHeader {
 	width:100%;
 	background-color:#F03434; /* RØD */
-	height:80px;
+	/*height:80px;*/
 	display:inline-block;
 }
 .logo {
@@ -49,7 +49,7 @@ body {
 .secondContentHeader {
 	width:100%;
 	background-color:#446CB3; /* BLÅ */
-	height:80px;
+	/*height:80px;*/
 	display:inline-block;
 }
 .secondContentHeader h2 {
@@ -62,8 +62,9 @@ body {
 .thirdContentHeader {
 	width:100%;
 	background-color:#F7CA18; /* GUL */
-	height:80px;
+	/*height:80px;*/
 	display:inline-block;
+	
 }
 .thirdContentHeader h2 {
 	color:white;
@@ -115,8 +116,7 @@ body {
 	margin-top:5em;
 }
 .sideBarBox li:hover {
-	background-color:#ECECEC;
-	
+	margin-left:2%;
 }
 #ipad {
 	float:right;
