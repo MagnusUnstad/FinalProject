@@ -1,163 +1,187 @@
 <!DOCTYPE html>
 <html lang="NO">
-	<head>
-		<title>Omsorg</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-	</head>
 
-	<body>
-		<div id="accessibilityBox" class="hidden">
-			<ul>
-				<li><a href="#">Test</a></li>
-				<li><a href="#">Test</a></li>
-				<li><a href="#">Test</a></li>
-				<li><a href="#">Test</a></li>
-			</ul>
-		
-		</div>
-		
-		<!-- Denne vises kun på mobil -->
-		<div class="openNav" onClick="openSidebar()">
-			<i class="fa fa-bars"></i>
-		</div>
-		
-		
-		<div class="mainContentBox" id="del1">
-			<div class="mainContentHeader">
-				<div class="logo"></div>
-			</div>
-		<h2>THE NEW PARADIGM</h2>
-		<p>Paradigm; correlation program area; social entrepreneurship shine, targeted; external partners incubator challenges and opportunities. Social capital; thought leadership social impact ideate inclusive empower shared value accessibility. When, boots on the ground indicators revolutionary impact investing. The resistance global improve the world incubator triple bottom line strategy thought leader. Gender rights agile greenwashing; scalable synergy; to the resistance problem-solvers. Ecosystem replicable efficient, systems thinking initiative global resist. Social entrepreneur empower, segmentation blended value equal opportunity empathetic human-centered. Collaborative cities changemaker save the world justice, strategy when green space uplift parse. Boots on the ground thought provoking empower compassion co-create. Venture philanthropy; fairness compassion equal opportunity transparent overcome injustice systems thinking entrepreneur social intrapreneurship. Scalable engaging challenges and opportunities invest incubator. But LGBTQ+ white paper empower the resistance, when shared vocabulary green space. Theory of change; blended value; inspirational; bandwidth, the resistance targeted effective altruism strengthening infrastructure the. Blended value collaborate, expose.</p>
-		
-		<img src="ipad.png" alt="Montasje av en iPad satt opp med vår app" id="ipad">
-		
-		</div>
-		
-		<div class="mainContentBox" id="del2">
-			<div class="secondContentHeader">
-				<h2>MOVEMENTS, MILESTONES</h2>
-			</div>
-			
-			<p>Data; capacity building, families targeted, inspirational; correlation impact or. Deep dive changemaker inclusive shared unit of analysis mobilize movements. Issue outcomes problem-solvers outcomes, black lives matter when to optimism thought provoking. Sustainable; parse, thought partnership we must stand up our work grit leverage policymaker state of play. Movements, milestones energize and movements thought leader. Triple bottom line, design thinking inspirational scale and impact equal opportunity effective LGBTQ+ living a fully ethical life bandwidth. Relief black lives matter synergy challenges and opportunities boots on the ground the resistance when shine. Social entrepreneurship gender rights, synergy ideate, ecosystem living a fully ethical life we must stand up sustainable. Social enterprise accessibility but mobilize radical; gender rights move the needle strategy. Deep dive compassion relief LGBTQ+ replicable the resistance resist. Academic white paper deep dive, inspirational rubric, think tank thought provoking invest. Engaging B-corp resist empathetic to storytelling, paradigm. Academic dynamic, shine state.</p>
-		</div>
-		
-		<div class="mainContentBox" id="del3">
-			<div class="thirdContentHeader">
-				<h2>COLLABORATIVE CONSUMPTION</h2>
-			</div>
-				<p>Relief; our work innovate inspiring unprecedented challenge best practices inclusive framework. Human-centered optimism segmentation; resilient scale and impact emerging. Do-gooder communities strategize innovation when impact humanitarian, best practices. Silo fairness boots on the ground we must stand up collaborate. Ecosystem preliminary thinking milestones green space social innovation inspirational youth inclusion. Uplift inclusion strategy outcomes contextualize philanthropy strengthening infrastructure. Ideate bandwidth to then do-gooder; black lives matter think tank co-creation. Program area synergy big data social entrepreneur living a fully ethical life issue outcomes. Granular inclusive, scale and impact inspire youth, unprecedented challenge activate indicators. Improve the world inspiring think tank innovate engaging systems thinking compelling empower collaborative cities. Systems thinking, revolutionary, equal opportunity, storytelling program area overcome injustice circular big data. Paradigm, activate humanitarian social entrepreneur, invest improve the world segmentation thought leadership. Collaborative consumption support, preliminary thinking her body her rights because shared vocabulary social enterprise circular shine. Big.</p>
-			</div>		
-		
-		<div class="sideBarBox" id="slider">
-			<div class="sideBarBoxHeader" id="scrollColor">
-				<h2>Meny</h2>
-				<div class="closeNav" onClick="closeSidebar()"><i class="fa fa-times-circle"></i></div> <!-- kun på mobil -->
-			</div>
-			<nav>
-				<ul id="sBB">
-					<a href="#"><li>Problemet</li></a>
-					<a href="#"><li>Våre løsninger</li></a>
-					<a href="#"><li>En link</li></a>
-					<a href="#"><li>En link</li></a>
-					<a href="#"><li>En link</li></a>
-					<a href="#"><li>En link</li></a>
-				</ul>
-			</nav>
-		</div>
-		
-		<div style="height:50px"></div> <!-- spacer div for å få litt margin på bunn -->
-		<!-- må være på bunnen for at det skal fungere. kan (bør) fikses med en onload-funksjon -->
-		<script>
-			/* Dette scriptet lager underlinjer med gradient */
-			function gradient() {
-				let gradient = 1;
-				let lis = document.getElementById("sBB").getElementsByTagName("li");
-					for (let i=0;i<lis.length;i++) {
-						gradient-= (1/lis.length);
-						lis[i].style.borderBottom = "2px solid rgba(240,52,52," + gradient + ")";
-					}
-			}
-			gradient();
-			
-			function scrollColor() {
-				const startColor = [236,100,75];
-				const secondColor = [68,108,179];
-				let scroll = document.body.scrollTop;
-				console.log(scroll);
-				const scrollBar = document.getElementById("scrollColor")
-				scrollBar.style.backgroundColor;
-			}
-			
-			/* Script for tab-funksjon. Kjører koden i if-strukturen hvis man trykker på tab */
-			let pressNr = 0; //Hvor mange trykk
-			let hvorMangeLinker = 4; //Denne MÅ være på antall linker i menyen
-			document.addEventListener("keydown", function(event) {
-			
-			  if (event.keyCode == 9) {
-				pressNr++;
-				onTabPress();
-			  }
-			});
-			
-			function onTabPress() {
-				const box = document.getElementById("accessibilityBox");
-				
-				if (pressNr == 1) {
-					box.classList.toggle("hidden");
-				}
-				if (pressNr == hvorMangeLinker + 1) { //Lukker boksen
-					box.classList.toggle("hidden");
-				}
-			}
-			//Henter scrollposisjon og kjører colorChanger med y-verdien
-			function activeLink() {
-				let lis = document.getElementById("sBB").getElementsByTagName("li");
-				window.addEventListener('scroll', function(e){
-					let scrollPosition = window.scrollY;
-					colorChanger(scrollPosition);
-				});
-				
-				function colorChanger(y) {
-					let styleTo = "rgba(240,52,52,1)";
-					if (y > 0 && y < 800) {
-						clearColors(0);
-						lis[0].style.color = styleTo;
-					} else if (y > 800 && y < 1400) {
-						clearColors(1);
-						lis[1].style.color = styleTo;
-					} else if (y > 1400) {
-						clearColors(2);
-						lis[2].style.color = styleTo;
-					}
-					
-				}
-				//Sørger for at linkene som ikke er aktive er sorte
-				function clearColors(k) {
-					
-					for (let i=0;i<lis.length;i++) {
-						if (!(k==i)) {
-							lis[i].style.color = "#333333";
-						}
-					}
-				}
-			}
-			activeLink();
-			
-			
-			//Sidebar
-			function openSidebar() {
-				document.getElementById("slider").style.width = "50%";
-			}
-			function closeSidebar() {
-				document.getElementById("slider").style.width = "0";
-			}
-			
-			
-		</script>
-		
-	</body>
-	
-	<!-- Her en en kommentar -->
-	
+<head>
+    <title>Omsorg</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="accessibilityBox" class="hidden">
+        <ul>
+            <li><a href="#">Test</a>
+            </li>
+            <li><a href="#">Test</a>
+            </li>
+            <li><a href="#">Test</a>
+            </li>
+            <li><a href="#">Test</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- Denne vises kun på mobil -->
+    <div class="openNav" onClick="openSidebar()">
+        <i class="fa fa-bars"></i>
+    </div>
+
+
+    <div class="mainContentBox" id="del1">
+        <div class="mainContentHeader">
+            <div class="logo"></div>
+        </div>
+        <h2>THE NEW PARADIGM</h2>
+
+        <p class="sitat"><i class="fa fa-quote-left" aria-hidden="true"></i> Omsorg bryter språkbarrierene mellom pasient og helsepersonell
+            <i class="fa fa-quote-right" aria-hidden="true"></i>
+        </p>
+
+        <p class="floatLeftParagraph">Paradigm; correlation program area; social entrepreneurship shine, targeted; external partners incubator challenges and opportunities. Social capital; thought leadership social impact ideate inclusive empower shared value accessibility. When, boots on the ground indicators revolutionary impact investing. The resistance global improve the world incubator triple bottom line strategy thought leader. Gender rights agile greenwashing; scalable synergy; to the resistance problem-solvers. Ecosystem replicable efficient, systems thinking initiative global resist. Social entrepreneur empower, segmentation blended value equal opportunity empathetic human-centered. Collaborative cities changemaker save the world justice, strategy when green space uplift parse. Boots on the ground thought provoking empower compassion co-create. Venture philanthropy; fairness compassion equal opportunity transparent overcome injustice systems thinking entrepreneur social intrapreneurship. Scalable engaging challenges and opportunities invest incubator. But LGBTQ+ white paper empower the resistance, when shared vocabulary green space. Theory of change; blended value; inspirational; bandwidth, the resistance targeted effective altruism strengthening infrastructure the. Blended value collaborate, expose.</p>
+
+        <img src="ipad.png" alt="Montasje av en iPad satt opp med vår app" id="ipad">
+
+    </div>
+
+    <div class="mainContentBox" id="del2">
+        <div class="secondContentHeader">
+            <h2>MOVEMENTS, MILESTONES</h2>
+        </div>
+
+        <p>Data; capacity building, families targeted, inspirational; correlation impact or. Deep dive changemaker inclusive shared unit of analysis mobilize movements. Issue outcomes problem-solvers outcomes, black lives matter when to optimism thought provoking. Sustainable; parse, thought partnership we must stand up our work grit leverage policymaker state of play. Movements, milestones energize and movements thought leader. Triple bottom line, design thinking inspirational scale and impact equal opportunity effective LGBTQ+ living a fully ethical life bandwidth. Relief black lives matter synergy challenges and opportunities boots on the ground the resistance when shine. Social entrepreneurship gender rights, synergy ideate, ecosystem living a fully ethical life we must stand up sustainable. Social enterprise accessibility but mobilize radical; gender rights move the needle strategy. Deep dive compassion relief LGBTQ+ replicable the resistance resist. Academic white paper deep dive, inspirational rubric, think tank thought provoking invest. Engaging B-corp resist empathetic to storytelling, paradigm. Academic dynamic, shine state.</p>
+    </div>
+
+    <div class="mainContentBox" id="del3">
+        <div class="thirdContentHeader">
+            <h2>COLLABORATIVE CONSUMPTION</h2>
+        </div>
+        <p>Relief; our work innovate inspiring unprecedented challenge best practices inclusive framework. Human-centered optimism segmentation; resilient scale and impact emerging. Do-gooder communities strategize innovation when impact humanitarian, best practices. Silo fairness boots on the ground we must stand up collaborate. Ecosystem preliminary thinking milestones green space social innovation inspirational youth inclusion. Uplift inclusion strategy outcomes contextualize philanthropy strengthening infrastructure. Ideate bandwidth to then do-gooder; black lives matter think tank co-creation. Program area synergy big data social entrepreneur living a fully ethical life issue outcomes. Granular inclusive, scale and impact inspire youth, unprecedented challenge activate indicators. Improve the world inspiring think tank innovate engaging systems thinking compelling empower collaborative cities. Systems thinking, revolutionary, equal opportunity, storytelling program area overcome injustice circular big data. Paradigm, activate humanitarian social entrepreneur, invest improve the world segmentation thought leadership. Collaborative consumption support, preliminary thinking her body her rights because shared vocabulary social enterprise circular shine. Big.</p>
+    </div>
+
+    <div class="sideBarBox" id="slider">
+        <div class="sideBarBoxHeader" id="scrollColor">
+            <h2>Meny</h2>
+            <div class="closeNav" onClick="closeSidebar()"><i class="fa fa-times-circle"></i>
+            </div>
+            <!-- kun på mobil -->
+        </div>
+        <nav>
+            <ul id="sBB">
+                <a href="#">
+                    <li>Problemet</li>
+                </a>
+                <a href="#">
+                    <li>Våre løsninger</li>
+                </a>
+                <a href="#">
+                    <li>En link</li>
+                </a>
+                <a href="#">
+                    <li>En link</li>
+                </a>
+                <a href="#">
+                    <li>En link</li>
+                </a>
+                <a href="#">
+                    <li>En link</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+
+    <div style="height:50px"></div>
+    <!-- spacer div for å få litt margin på bunn -->
+    <!-- må være på bunnen for at det skal fungere. kan (bør) fikses med en onload-funksjon -->
+    <script>
+        /* Dette scriptet lager underlinjer med gradient */
+        function gradient() {
+            let gradient = 1;
+            let lis = document.getElementById("sBB").getElementsByTagName("li");
+            for (let i = 0; i < lis.length; i++) {
+                gradient -= (1 / lis.length);
+                lis[i].style.borderBottom = "2px solid rgba(240,52,52," + gradient + ")";
+            }
+        }
+        gradient();
+
+        function scrollColor() {
+            const startColor = [236, 100, 75];
+            const secondColor = [68, 108, 179];
+            let scroll = document.body.scrollTop;
+            console.log(scroll);
+            const scrollBar = document.getElementById("scrollColor")
+            scrollBar.style.backgroundColor;
+        }
+
+        /* Script for tab-funksjon. Kjører koden i if-strukturen hvis man trykker på tab */
+        let pressNr = 0; //Hvor mange trykk
+        let hvorMangeLinker = 4; //Denne MÅ være på antall linker i menyen
+        document.addEventListener("keydown", function(event) {
+
+            if (event.keyCode == 9) {
+                pressNr++;
+                onTabPress();
+            }
+        });
+
+        function onTabPress() {
+                const box = document.getElementById("accessibilityBox");
+
+                if (pressNr == 1) {
+                    box.classList.toggle("hidden");
+                }
+                if (pressNr == hvorMangeLinker + 1) { //Lukker boksen
+                    box.classList.toggle("hidden");
+                }
+            }
+            //Henter scrollposisjon og kjører colorChanger med y-verdien
+        function activeLink() {
+            let lis = document.getElementById("sBB").getElementsByTagName("li");
+            window.addEventListener('scroll', function(e) {
+                let scrollPosition = window.scrollY;
+                colorChanger(scrollPosition);
+            });
+
+            function colorChanger(y) {
+                    let styleTo = "rgba(240,52,52,1)";
+                    if (y > 0 && y < 800) {
+                        clearColors(0);
+                        lis[0].style.color = styleTo;
+                    } else if (y > 800 && y < 1400) {
+                        clearColors(1);
+                        lis[1].style.color = styleTo;
+                    } else if (y > 1400) {
+                        clearColors(2);
+                        lis[2].style.color = styleTo;
+                    }
+
+                }
+                //Sørger for at linkene som ikke er aktive er sorte
+            function clearColors(k) {
+
+                for (let i = 0; i < lis.length; i++) {
+                    if (!(k == i)) {
+                        lis[i].style.color = "#333333";
+                    }
+                }
+            }
+        }
+        activeLink();
+
+
+        //Sidebar
+        function openSidebar() {
+            document.getElementById("slider").style.width = "50%";
+        }
+
+        function closeSidebar() {
+            document.getElementById("slider").style.width = "0";
+        }
+    </script>
+
+</body>
+
+<!-- Her en en kommentar -->
+
 </html>
