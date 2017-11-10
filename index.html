@@ -15,7 +15,13 @@
 			</ul>
 		
 		</div>
-	
+		
+		<!-- Denne vises kun på mobil -->
+		<div class="openNav" onClick="openSidebar()">
+			Meny
+		</div>
+		
+		
 		<div class="mainContentBox" id="del1">
 			<div class="mainContentHeader">
 				<div class="logo"></div>
@@ -42,9 +48,10 @@
 				<p>Relief; our work innovate inspiring unprecedented challenge best practices inclusive framework. Human-centered optimism segmentation; resilient scale and impact emerging. Do-gooder communities strategize innovation when impact humanitarian, best practices. Silo fairness boots on the ground we must stand up collaborate. Ecosystem preliminary thinking milestones green space social innovation inspirational youth inclusion. Uplift inclusion strategy outcomes contextualize philanthropy strengthening infrastructure. Ideate bandwidth to then do-gooder; black lives matter think tank co-creation. Program area synergy big data social entrepreneur living a fully ethical life issue outcomes. Granular inclusive, scale and impact inspire youth, unprecedented challenge activate indicators. Improve the world inspiring think tank innovate engaging systems thinking compelling empower collaborative cities. Systems thinking, revolutionary, equal opportunity, storytelling program area overcome injustice circular big data. Paradigm, activate humanitarian social entrepreneur, invest improve the world segmentation thought leadership. Collaborative consumption support, preliminary thinking her body her rights because shared vocabulary social enterprise circular shine. Big.</p>
 			</div>		
 		
-		<div class="sideBarBox">
+		<div class="sideBarBox" id="slider">
 			<div class="sideBarBoxHeader" id="scrollColor">
 				<h2>Meny</h2>
+				<div class="closeNav" onClick="closeSidebar()">Lukk</div> <!-- kun på mobil -->
 			</div>
 			<nav>
 				<ul id="sBB">
@@ -137,6 +144,13 @@
 			activeLink();
 			
 			
+			//Sidebar
+			function openSidebar() {
+				document.getElementById("slider").style.width = "50%";
+			}
+			function closeSidebar() {
+				document.getElementById("slider").style.width = "0";
+			}
 			
 			
 		</script>

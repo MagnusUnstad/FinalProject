@@ -99,7 +99,7 @@ body {
 .sideBarBoxHeader h2{
 	color:white;
 	padding-left:1em;
-
+	float:left;
 	text-shadow:0 1px 2px rgba(0,0,0,0.20);
 }
 .sideBarBox li {
@@ -136,6 +136,48 @@ body {
 .hidden {
 	visibility:hidden;
 }
-.activelink {
-	color:green !important;
+.openNav {
+	display:none;
+}
+.closeNav {
+	display:none;
+}
+
+@media screen and (max-width: 800px) {
+	.mainContentBox {
+		width:90%;
+		float:none;
+	}
+	.mainContentBox p {
+		width:90%;
+		float:none;
+	}
+	.sideBarBox {
+		float:right;
+		margin:0;
+		height:100%;
+		width:0;
+		transition:0.5s;
+	}
+	
+	.openNav {
+		display:block;
+		height:50px;
+		width:50px;
+		background-color:rgb(211, 84, 0);
+		position:fixed;
+		right:3%;
+		top:3%;
+		border-radius:50%;
+		text-align:center;
+	}
+	.closeNav {
+		display:inline-block;
+		background-color:rgb(211, 84, 0);
+		border-radius:50%;
+		height:50px;
+		width:50px;
+	}
+	
+
 }
