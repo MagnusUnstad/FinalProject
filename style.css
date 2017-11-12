@@ -12,6 +12,7 @@ body {
 	font-size:200%;
 	width:100%;
 	font-style:italic;
+	
 }
 
 .mainContentBox {
@@ -100,7 +101,7 @@ body {
 .sideBarBoxHeader {
 	width:100%;
 	background-color:#EC644B;
-	height:60px;
+	
 
 	float:right;
 }
@@ -169,6 +170,7 @@ body {
 		height:100%;
 		width:0;
 		transition:0.5s;
+		font-size:200%;
 	}
 	
 	.openNav {
