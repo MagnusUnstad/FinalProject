@@ -24,12 +24,6 @@
 
     </div>
 
-    <!-- Denne vises kun på mobil -->
-    <div class="openNav" onClick="openSidebar()">
-        <i class="fa fa-bars"></i>
-    </div>
-
-
     <div class="mainContentBox" id="del1">
         <div class="mainContentHeader">
             <div class="logo"></div>
@@ -64,12 +58,15 @@
     <div class="sideBarBox" id="slider">
         <div class="sideBarBoxHeader" id="scrollColor">
             <h2>Meny</h2>
-            <div class="closeNav" onClick="closeSidebar()"><i class="fa fa-times-circle"></i>
-            </div>
-            <!-- kun på mobil -->
         </div>
         <nav>
-            <ul id="sBB">
+          <div id="sBB">
+            <div id="menuToggle">
+              <input class="hiddenOnDesktop" type="checkbox" / >
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
                 <a href="#">
                     <li>Problemet</li>
                 </a>
@@ -88,7 +85,9 @@
                 <a href="#">
                     <li>En link</li>
                 </a>
-            </ul>
+              </ul>
+            </div>
+          </div>
         </nav>
     </div>
 
