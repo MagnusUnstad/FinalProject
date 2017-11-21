@@ -9,14 +9,7 @@ function gradient() {
 }
 gradient();
 
-function scrollColor() {
-    const startColor = [236, 100, 75];
-    const secondColor = [68, 108, 179];
-    let scroll = document.body.scrollTop;
-    console.log(scroll);
-    const scrollBar = document.getElementById("scrollColor")
-    scrollBar.style.backgroundColor;
-}
+
 
 /* Script for tab-funksjon. Kjører koden i if-strukturen hvis man trykker på tab */
 let pressNr = 0; //Hvor mange trykk
@@ -40,6 +33,7 @@ function onTabPress() {
         }
     }
     //Henter scrollposisjon og kjører colorChanger med y-verdien
+    /* Kommenterer ut denne da den ikke fungerer som den skal
 function activeLink() {
     let lis = document.getElementById("sBB").getElementsByTagName("li");
     window.addEventListener('scroll', function(e) {
@@ -72,13 +66,4 @@ function activeLink() {
     }
 }
 activeLink();
-
-
-//Sidebar
-function openSidebar() {
-    document.getElementById("slider").style.width = "50%";
-}
-
-function closeSidebar() {
-    document.getElementById("slider").style.width = "0";
-}
+*/

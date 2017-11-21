@@ -53,8 +53,9 @@ ol {
 .logo {
 	background-image:url("logo.png");
 	background-repeat: no-repeat;
-	height:80px;
-	background-size:180px;
+	background-size:cover;
+	height:100px;
+	background-size:280px;
 	margin-top:10px;
 	margin-left:5%;
 
@@ -156,12 +157,7 @@ ol {
 .hiddenOnDesktop {
 	display:none;
 }
-.openNav {
-	display:none;
-}
-.closeNav {
-	display:none;
-}
+
 
 @media screen and (max-width: 800px) {
 	.mainContentBox {
@@ -181,137 +177,107 @@ ol {
 		font-size:200%;
 	}
 
-	.openNav {
-		display:block;
-		height:80px;
-		width:80px;
-		border:solid 1px #333333;
-		background-color:rgb(211, 84, 0);
-		position:fixed;
-		right:3%;
-		top:3%;
-		border-radius:50%;
-		text-align:center;
-		font-size:200%;
-
-	}
-	.closeNav {
-		height:60px;
-		width:60px;
-		font-size:300%;
-
-		position:fixed !important;
-		display:inline-block;
-	}
-	.closeNav i, .openNav i {
-		text-align:center;
-		position:absolute;
-		top:50%;
-		left:50%;
-		transform:translate(-50%,-50%);
-	}
 
 	#menuToggle span {
-		display: block;
-		width: 60px;
-		height: 8px;
-		margin-bottom: 6px;
-		position: relative;
-		transform-origin: 4px 0px;
-		transition: transform 0.5s cubic-bezier(0.9,0.2,0.05,1.0),
-		background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-		opacity 0.55s ease;
-		background: #333333;
-		border-radius: 3px;
-		z-index: 1;
-
-		box-shadow:0 1px 2px rgba(0,0,0,0.20);
-	}
-
-
-	#menuToggle span:first-child {
-	  transform-origin: 0% 0%;
-	}
-	#menuToggle span:nth-last-child(2) {
-	  transform-origin: 0% 100%;
-	}
-
-	#menuToggle input {
-		display: block;
-		width: 90px;
-		height: 98px;
-		position: fixed;
-		top: 20px;
-		right: 3em;
-		cursor: pointer;
-		opacity: 0; /* hide this */
-		z-index: 2; /* and place it over the hamburger */
-		-webkit-touch-callout: none;
-	}
+			display: block;
+			width: 60px;
+			height: 8px;
+			margin-bottom: 6px;
+			position: relative;
+			transform-origin: 4px 0px;
+			transition: transform 0.5s cubic-bezier(0.9,0.2,0.05,1.0),
+			background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+			opacity 0.55s ease;
+			background: #333333;
+			border-radius: 3px;
+			z-index: 1;
+			box-shadow:0 1px 2px rgba(0,0,0,0.20);
+		}
 
 
-	/*
-	 * Transform all the slices of hamburger
-	 * into a crossmark.
-	 */
-	#menuToggle input:checked ~ span	{
-	  transform: rotate(45deg) translate(-5px, 1px);
-	  background: #F03434;
-	}
-	/*
-	 * But let's hide the middle one.
-	 */
-	#menuToggle input:checked ~ span:nth-last-child(3)
-	{
-	  opacity: 0;
-	  transform: rotate(0deg) scale(0.2, 0.2);
-	}
+		#menuToggle span:first-child {
+		  transform-origin: 0% 0%;
+		}
+		#menuToggle span:nth-last-child(2) {
+		  transform-origin: 0% 100%;
+		}
 
-	/*
-	 * Ohyeah and the last one should go the other direction
-	 */
-	#menuToggle input:checked ~ span:nth-last-child(2) {
-	  transform: rotate(-45deg) translate(0, 0px);
-	}
-
-	#menuToggle {
-	  display: block;
-	  position: fixed;
-	  top: 50px;
-	  right: 1.5em;
-	  z-index: 1;
-	  -webkit-user-select: none;
-	  user-select: none;
-	}
-	#menuToggle input:checked ~ ul {
-	  transform: translateX(-100%);
-	}
+		#menuToggle input {
+			display: block;
+			width: 90px;
+			height: 98px;
+			position: fixed;
+			top: 20px;
+			right: 3em;
+			cursor: pointer;
+			opacity: 0; /* hide this */
+			z-index: 2; /* and place it over the hamburger */
+			-webkit-touch-callout: none;
+		}
 
 
-	/*
-	 * Make this absolute positioned
-	 * at the top left of the screen
-	 */
-	#menu {
-	  position: fixed;
-	  width: 100%;
-		height:100%;
-	  margin: -100% 0 0 50%; /* 410px utenfor skjermen */
-	  padding: 50px;
-	  padding-top: 100%;
-	  background: #ededed;
-	  list-style-type: none;
-	  -webkit-font-smoothing: antialiased;
-	  /* to stop flickering of text in safari */
-	  transform-origin: 0% 0%;
-	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-	}
+		/*
+		 * Transform all the slices of hamburger
+		 * into a crossmark.
+		 */
+		#menuToggle input:checked ~ span	{
+		  transform: rotate(45deg) translate(-5px, 1px);
+		  background: #F03434;
+		}
+		/*
+		 * But let's hide the middle one.
+		 */
+		#menuToggle input:checked ~ span:nth-last-child(3)
+		{
+		  opacity: 0;
+		  transform: rotate(0deg) scale(0.2, 0.2);
+		}
 
-	#menu li {
-	  padding: 10px 0;
-	  font-size: 22px;
+		/*
+		 * Ohyeah and the last one should go the other direction
+		 */
+		#menuToggle input:checked ~ span:nth-last-child(2) {
+		  transform: rotate(-45deg) translate(0, 0px);
+		}
 
-	}
+		#menuToggle {
+		  display: block;
+		  position: fixed;
+		  top: 50px;
+		  right: 1.5em;
+		  z-index: 1;
+		  -webkit-user-select: none;
+		  user-select: none;
+		}
+		#menuToggle input:checked ~ ul {
+		  transform: translateX(-100%);
+		}
+
+
+		/*
+		 * Make this absolute positioned
+		 * at the top left of the screen
+		 */
+		#menu {
+		  position: fixed;
+		  width: 100%;
+			height:100%;
+		  margin: -100% 0 0 50%; /* 410px utenfor skjermen */
+		  padding: 50px;
+		  padding-top: 100%;
+		  background: #ededed;
+		  list-style-type: none;
+		  -webkit-font-smoothing: antialiased;
+		  /* to stop flickering of text in safari */
+		  transform-origin: 0% 0%;
+		  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+		}
+
+		#menu li {
+		  padding: 10px 0;
+		  font-size: 22px;
+
+		}
 
 
 
