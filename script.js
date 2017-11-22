@@ -11,20 +11,23 @@ gradient();
 
 
 
-/* Script for tab-funksjon. Kjører koden i if-strukturen hvis man trykker på tab */
+/* Script for tab-funksjon. Åpner accessibilityBox hvis man trykker på tab */
 let pressNr = 0; //Hvor mange trykk
 let hvorMangeLinker = 4; //Denne MÅ være på antall linker i menyen
 document.addEventListener("keydown", function(event) {
 
-    if (event.keyCode == 9) {
+    if (event.keyCode == 9 && !(event.shiftKey)) {
         pressNr++;
         onTabPress();
+    }
+    if (event.keyCode == 9 && event.shiftKey) { //For å gå tilbake
+      pressNr--;
+      return;
     }
 });
 
 function onTabPress() {
         const box = document.getElementById("accessibilityBox");
-
         if (pressNr == 1) {
             box.classList.toggle("hidden");
         }
