@@ -63,7 +63,7 @@ body {
 /*bakgrunnen som gjør at man ser buene over og under*/
 .spannerbackground {
   margin-top: 4em;
-  height: 500px;
+  height: 350px;
   background: #16242C;
 
   z-index: -5;
