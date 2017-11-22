@@ -17,7 +17,7 @@ body {
 	font-size:200%;
 	font-style:italic;
 	position:relative;
-	bottom:-15px;
+	margin-bottom:0 !important;
 }
 
 .mainContentBox {
@@ -134,6 +134,11 @@ ol {
 .sideBarBox ul {
 	list-style:none;
 	margin-top:5em;
+}
+.sideBarBox ul img { /* uk flag */
+	position:relative;
+	left:80%;
+	transform:scale(0.7);
 }
 .sideBarBox li:hover {
 	margin-left:2%;

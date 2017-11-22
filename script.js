@@ -13,7 +13,7 @@ gradient();
 
 /* Script for tab-funksjon. Kjører koden i if-strukturen hvis man trykker på tab */
 let pressNr = 0; //Hvor mange trykk
-let hvorMangeLinker = 3; //Denne MÅ være på antall linker i menyen
+let hvorMangeLinker = 4; //Denne MÅ være på antall linker i menyen
 document.addEventListener("keydown", function(event) {
 
     if (event.keyCode == 9) {
