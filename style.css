@@ -162,6 +162,20 @@ ol {
 .hiddenOnDesktop {
 	display:none;
 }
+.progressbar-bak {
+	height:5px;
+	width:100vw;
+	position:fixed;
+	bottom:0;
+	z-index:0;
+}
+#progressbar-frem {
+	height:100%;
+	background-color:#333333;
+	z-index:1;
+	transition:all 0.1s linear;
+
+}
 
 
 @media screen and (max-width: 800px) {

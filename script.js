@@ -70,3 +70,15 @@ function activeLink() {
 }
 activeLink();
 */
+
+//Script for progressbar
+let maxHeight = document.body.offsetHeight - window.innerHeight; //Høyden på hele siden
+let bar = document.getElementById("progressbar-frem"); //Målelementet
+window.addEventListener('scroll', function(e) {
+    let scrollPosition = window.scrollY;
+    progressBar(scrollPosition);
+});
+function progressBar(scrollPosition) {
+    let progressBarPosition = Math.floor((scrollPosition / maxHeight) * 100); //Tilsvarer prosent som er scrollet på siden
+    bar.style.width = progressBarPosition + "vw";
+}
