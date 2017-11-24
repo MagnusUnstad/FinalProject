@@ -2,73 +2,99 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
-  height: 2000px;
+  height: 3000px;
   overflow-x: hidden;
   font-family: sans-serif;
 }
 
-video {
-  margin-top: 5em;
-  margin-bottom: 3em;
-  box-shadow: none;
+.topspanbg {
+  height: 4em;
+  background: #003140;
+  background: linear-gradient(180deg, #003140, #8B1E46), url("square_bg.png");
+  background-blend-mode: overlay;
+  background-size: 150% 200%;
+
+  animation: gradient 8s infinite;
+}
+.topspan {
+  width: 265%;
+  height: 30vh;
+  background: #F2F2F2;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -4em;
+  left: -40%;
+
+  z-index: 1;
 }
 
+
 .video {
+  position: relative;
   display: block;
   max-width: 1000px;
+  box-shadow: none;
+  margin: auto;
+  margin-top: 20vh;
+  margin-bottom: 24vh;
 
-  margin-left: auto;
-  margin-right: auto;
+  z-index: 5;
 }
 
 /* Området man trykker */
 #arrow-toggle {
   display: block;
   position: relative;
-  height: 6em;
+  height: 7em;
   width: 9em;
   opacity: 0;
   margin: auto;
-  margin-bottom: -14em;
+  margin-bottom: -5em;
 
-  z-index: 3;
+
+  z-index: 4;
 
   cursor: pointer;
 }
 
-.hover {
-  background: linear-gradient(0deg, #022029, #C61648);
-  background-size: 400% 400%;
-}
 
 section:hover > #arrows {
-  background-size: 300% 300%;
-  animation: gradient 2s ease infinite;
+  animation: gradient 3s ease infinite;
 
-}
-
-section:hover > #arrows {
-  width: 40px;
+  width: 35px;
   transition: 1.5s;
   transition-timing-function: cubic-bezier(.26,.29,.42,.81);
 }
 
-
-.hover:hover {
+#arrows:hover {
   animation: gradient 2s ease infinite;
+}
+
+section:hover > #arrowbody {
+  animation: gradient 3s ease infinite;
 }
 
 
 #arrows {
   display: block;
   height: 2px;
-  width: 50px;
+  width: 60px;
   position: relative;
-  left: 50%;
+  margin-left: 50%;
+  margin-right: 50%;
 
-  z-index: 2;
+  z-index: 3;
+
+  background: linear-gradient(0deg, #003140, #dd3565);
+  background-size: 100% 200%;
 
   transition: width 1s ease-out;
+}
+
+@keyframes gradienttopspan {
+   0%  {background-position:49% 0%}
+   50% {background-position:52% 100%}
+   100%{background-position:49% 0%}
 }
 
 @keyframes gradient {
@@ -78,14 +104,30 @@ section:hover > #arrows {
 }
 
 .arrow {
-  margin-top: 10em;
-  transform-origin: -1.5px -1.5px;
+  transform-origin: 6px 15px;
   transform: rotate(-135deg);
 }
 
 .arrow2 {
-  transform-origin: -10px 0px;
+  transform-origin: 30px 13.2px;
   transform: rotate(-45deg);
+}
+
+#arrowbody {
+  display: block;
+  height: 2px;
+  width: 47px;
+  position: relative;
+  margin: auto;
+
+  z-index: 2;
+
+  transform: rotate(270deg);
+
+  background: linear-gradient(0deg, #003140, #dd3565);
+  background-size: 400% 400%;
+
+  transition: width 1s ease-out;
 }
 
 #arrowtext {
@@ -94,14 +136,10 @@ section:hover > #arrows {
   font-size: 16px;
   color: #003140;
   margin: auto;
-  margin-top: 0em;
-  margin-bottom: -8em;
+  margin-top: 2em;
+  margin-bottom: -7em;
   width: 100px;
   text-align: center;
-  border-width: 1.9px;
-  border-radius: 10%;
-  border-style: solid;
-  border-color: #C61648;
 
   z-index: 2;
 }
@@ -133,8 +171,13 @@ section:hover > #arrows {
 .spannerbackground {
   margin-top: 4em;
   height: 20em;
-  background: #003140;
-  z-index: -5;
+  background: linear-gradient(180deg, #C61648, #003140), url("square_bg.png");
+  background-blend-mode: overlay;
+  background-repeat: repeat;
+
+  z-index: 1;
+
+  animation: gradienttopspan 8s infinite;
 }
 
 .spanner2 {
