@@ -82,3 +82,12 @@ function progressBar(scrollPosition) {
     let progressBarPosition = Math.floor((scrollPosition / maxHeight) * 100); //Tilsvarer prosent som er scrollet på siden
     bar.style.width = progressBarPosition + "vw";
 }
+
+//Lukker menyen ved trykk på en av lenkene. Uten denne må du lukke menyen manuelt etter trykk
+function checkBoxCloser() {
+  const checkBox = document.getElementById("menybutton");
+  if (checkBox.checked) {
+    checkBox.checked = false;
+  }
+}
+document.getElementById("menu").onclick = function() {checkBoxCloser()}
