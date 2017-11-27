@@ -6,15 +6,19 @@ body {
   overflow-x: hidden;
   font-family: sans-serif;
   line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+.forsiden {
+  height: 100vh;
 }
 
 .topspanbg {
-  height: 4em;
+  height: 7em;
 
   background: #003140;
   background: linear-gradient(180deg, #003140, #8B1E46), url("square_bg.png");
   background-blend-mode: overlay;
-  background-size: 200% 300%;
 
   /*animation: gradient 8s ease-out infinite;
   animation-direction: alternate;*/
@@ -22,12 +26,13 @@ body {
 
 .topspan {
   width: 265%;
-  height: 30vh;
+  height: 25vh;
   background: #F2F2F2;
   border-radius: 100%;
   position: absolute;
   margin-top: -4em;
-  left: -40%;
+  left: -83%;
+  transform: rotate(-2deg);
 
   z-index: 1;
 
@@ -42,16 +47,25 @@ body {
   }
 }
 
+.videoforside {
+  display: block;
+  position: relative;
+  margin: auto;
+}
+
 .video {
   position: relative;
   display: block;
-  max-width: 1000px;
   box-shadow: none;
   margin: auto;
-  margin-top: 20vh;
-  margin-bottom: 24vh;
+  margin-bottom: 10vh;
 
   z-index: 5;
+}
+
+video {
+  min-width: 40vw;
+  max-width: 80vw;
 }
 
 /* Området man trykker */
@@ -126,23 +140,6 @@ section:hover > #arrowbody {
   transform: rotate(-45deg);
 }
 
-#arrowbody {
-  display: block;
-  height: 2px;
-  width: 47px;
-  position: relative;
-  margin: auto;
-
-  z-index: 2;
-
-  transform: rotate(270deg);
-
-  background: linear-gradient(0deg, #003140, #dd3565);
-  background-size: 400% 400%;
-
-  transition: width 1s ease-out;
-}
-
 #arrowtext {
   display: block;
   position: relative;
@@ -161,12 +158,13 @@ section:hover > #arrowbody {
 /*lager buen som går mot høyre*/
 .spanner {
   width: 265%;
-  height: 8em;
+  height: 12em;
   border-radius: 100%;
   background: #F2F2F2;
   position: absolute;
   right: -5%;
   margin-top: -3em;
+  transform: rotate(-1deg);
 
   z-index: 1;
 
@@ -208,6 +206,7 @@ section:hover > #arrowbody {
   border-radius: 100%;
   position: absolute;
   margin-top: -4em;
+  margin-bottom: -4em;
   left: -40%;
 
   z-index: 1;
