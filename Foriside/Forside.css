@@ -170,8 +170,8 @@ section:hover > #arrowbody {
 
   z-index: 1;
 
-  animation: gradualtop 8s ease-in-out infinite;
-  animation-direction: alternate;
+  /*animation: gradualtop 8s ease-in-out infinite;
+  animation-direction: alternate;*/
 }
 
 @keyframes gradualtop {
@@ -212,8 +212,8 @@ section:hover > #arrowbody {
 
   z-index: 1;
 
-  animation: gradualbottom 8s ease-in-out infinite;
-  animation-direction: alternate;
+  /*animation: gradualbottom 8s ease-in-out infinite;
+  animation-direction: alternate;*/
 }
 
 @keyframes gradualbottom {
