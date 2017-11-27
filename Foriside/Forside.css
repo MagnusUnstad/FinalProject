@@ -9,19 +9,24 @@ body {
   scroll-behavior: smooth;
 }
 
-.forsiden {
-  height: 100vh;
-}
 
 .topspanbg {
   height: 7em;
-
-  background: #003140;
   background: linear-gradient(180deg, #003140, #8B1E46), url("square_bg.png");
   background-blend-mode: overlay;
 
   /*animation: gradient 8s ease-out infinite;
   animation-direction: alternate;*/
+}
+
+#forsiden {
+  min-width: 100vw;
+}
+
+img {
+  height: auto;
+  padding: 6px 0 0 10px;
+  max-width: 8em;
 }
 
 .topspan {
@@ -47,12 +52,6 @@ body {
   }
 }
 
-.videoforside {
-  display: block;
-  position: relative;
-  margin: auto;
-}
-
 .video {
   position: relative;
   display: block;
@@ -64,8 +63,9 @@ body {
 }
 
 video {
-  min-width: 40vw;
+  min-width: 60vw;
   max-width: 80vw;
+  margin-bottom: 5vh;
 }
 
 /* Området man trykker */
@@ -85,7 +85,7 @@ video {
 }
 
 
-section:hover > #arrows {
+section:hover > .arrows {
   animation: gradient 3s ease infinite;
 
   width: 35px;
@@ -93,16 +93,12 @@ section:hover > #arrows {
   transition-timing-function: cubic-bezier(.26,.29,.42,.81);
 }
 
-#arrows:hover {
+.arrows:hover {
   animation: gradient 2s ease infinite;
 }
 
-section:hover > #arrowbody {
-  animation: gradient 3s ease infinite;
-}
 
-
-#arrows {
+.arrows {
   display: block;
   height: 2px;
   width: 60px;
@@ -130,12 +126,12 @@ section:hover > #arrowbody {
    100%{background-position:51% 0%}
 }
 
-.arrow {
+#arrow {
   transform-origin: 6px 15px;
   transform: rotate(-135deg);
 }
 
-.arrow2 {
+#arrow2 {
   transform-origin: 30px 13.2px;
   transform: rotate(-45deg);
 }
@@ -158,7 +154,7 @@ section:hover > #arrowbody {
 /*lager buen som går mot høyre*/
 .spanner {
   width: 265%;
-  height: 12em;
+  height: 9em;
   border-radius: 100%;
   background: #F2F2F2;
   position: absolute;
