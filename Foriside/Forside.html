@@ -9,31 +9,35 @@
   </head>
   <body>
 
+  <div class="forsiden">
     <div class="topspanbg"></div>
     <section>
       <span class="topspan">
       </span>
     </section>
 
-    <video src="introvideo.mp4"  alt class="video" autoplay loop>Beskrivelse av video i stor detalj</video>
+  <div class="videoforside">
+    <video src="introvideo.mp4" class="video" autoplay loop>Beskrivelse av video i stor detalj</video>
+  </div>
 
-    <section>
-      <input type="button" onClick="location.href='#spannerbg'" id="arrow-toggle"/>
-      <span id="arrows" class="arrow"></span>
-      <span id="arrows" class="arrow2"></span>
-      <span id="arrowbody"></span>
-    </section>
+      <section>
+        <input type="button" onClick="location.href='#innhold'" id="arrow-toggle"/>
+        <span id="arrows" class="arrow"></span>
+        <span id="arrows" class="arrow2"></span>
+        <span id="arrowbody"></span>
+      </section>
 
-    <p id="arrowtext">Gå til innhold</p>
+      <p id="arrowtext">Gå til innhold</p>
 
-    <section>
-      <span class="spanner">
-      </span>
+      <section>
+        <span class="spanner">
+        </span>
 
-      <div class="spannerbackground" id="spannerbg"></div>
+        <div class="spannerbackground" id="spannerbg"></div>
 
-      <span class="spanner2">
-      </span>
-    </section>
+        <span class="spanner2" id="innhold">
+        </span>
+      </section>
+    </div>
   </body>
 </html>

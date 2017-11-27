@@ -1,20 +1,19 @@
+
 body {
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
-  height: 3000px;
   overflow-x: hidden;
   font-family: sans-serif;
   line-height: 1.5;
 }
 
 .topspanbg {
-  height: 4em;
+  height: 10em;
 
   background: #003140;
-  background: linear-gradient(180deg, #003140, #8B1E46), url("square_bg.png");
-  background-blend-mode: overlay;
-  background-size: 200% 300%;
+  background: linear-gradient(180deg, #003140, #8B1E46);
+  background-size: 500% 200%;
 
   /*animation: gradient 8s ease-out infinite;
   animation-direction: alternate;*/
@@ -24,12 +23,13 @@ body {
   width: 265%;
   height: 30vh;
   background: #F2F2F2;
-  border-radius: 100%;
+  border-radius: 200%;
   position: absolute;
   margin-top: -4em;
-  left: -40%;
+  left: -83%;
+  transform: rotate(-4deg);
 
-  z-index: 1;
+  z-index: 0;
 
   /*animation: gradualbottom 8s ease-in-out infinite;
   animation-direction: alternate;*/
@@ -42,16 +42,27 @@ body {
   }
 }
 
+.videoforside {
+  display: block;
+  position: relative;
+  height: 100vh
+  margin: auto;
+  margin-bottom: 3vh;
+
+}
+
 .video {
   position: relative;
   display: block;
-  max-width: 1000px;
   box-shadow: none;
   margin: auto;
-  margin-top: 20vh;
-  margin-bottom: 24vh;
+
 
   z-index: 5;
+}
+
+video {
+  width: 80vw;
 }
 
 /* Området man trykker */
@@ -209,11 +220,15 @@ section:hover > #arrowbody {
   position: absolute;
   margin-top: -4em;
   left: -40%;
-
-  z-index: 1;
+  z-index: 0;
 
   /*animation: gradualbottom 8s ease-in-out infinite;
   animation-direction: alternate;*/
+}
+
+.forsiden {
+  width: 100vw;
+  height: 100vh;
 }
 
 @keyframes gradualbottom {
