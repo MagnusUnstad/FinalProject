@@ -16,8 +16,8 @@ body {
   background-blend-mode: overlay;
   background-size: 200% 300%;
 
-  animation: gradient 8s ease-out infinite;
-  animation-direction: alternate;
+  /*animation: gradient 8s ease-out infinite;
+  animation-direction: alternate;*/
 }
 
 .topspan {
