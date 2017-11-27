@@ -10,7 +10,9 @@ body {
 }
 
 
-
+* {
+	scroll-behavior: smooth;
+}
 
 
 .sitat {
