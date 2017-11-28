@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="no">
   <head>
     <meta charset="utf-8">
-    <title></title>
+
+    <title>Omsorg</title>
     <link rel="stylesheet" href="Forside.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
 
-    <nav>
-      <div class="Navforside">
-        <ul>
-          <li><a href="#">The Problem</a></li>
-          <li><a href="#">The solution</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Try the app</a></li>
-        </ul>
-      </div>
-    </nav>
-    
-    <video src="introvideo.mp4"  alt class="video" autoplay loop>Beskrivelse av video i stor detalj</video>
+    <div id="forsiden">
 
+      <div class="topspanner">
+        <div class="topspanbg">
+          <img src="logo.png" alt="logo" id="toplogo">
+        </div>
+        <span class="topspan"></span>
+      </div>
+
+      <div class="videoforside">
+        <video src="introvideo.mp4" class="video" autoplay loop>Omsorg video</video>
+      </div>
+
+      <section>
+        <input type="button" name="innhold" onClick="location.href='#spannerbot'" id="arrow-toggle" value="innhold"/>
+        <span class="arrows" id="arrow"></span>
+        <span class="arrows" id="arrow2"></span>
+      </section>
+
+      <p id="arrowtext">Gå til innhold</p>
+
+      <div class="bottomspanner">
+        <span class="spanner"></span>
+        <div class="spannerbackground"></div>
+        <span class="spanner2" id="spannerbot"></span>
+      </div>
+
+    </div>
   </body>
 </html>
