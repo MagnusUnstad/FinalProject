@@ -86,10 +86,10 @@ video {
 
 
 section:hover > .arrows {
-  animation: gradient 3s ease infinite;
+  animation: gradient 2s ease infinite;
 
   width: 35px;
-  transition: 1.5s;
+  transition: 0.5s;
   transition-timing-function: cubic-bezier(.26,.29,.42,.81);
 }
 
@@ -111,7 +111,7 @@ section:hover > .arrows {
   background: linear-gradient(0deg, #003140, #dd3565);
   background-size: 100% 200%;
 
-  transition: width 1s ease-out;
+  transition: width 0.8s ease-out;
 }
 
 @keyframes gradienttopspan {
