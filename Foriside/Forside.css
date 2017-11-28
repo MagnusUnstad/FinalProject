@@ -2,64 +2,218 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
+  height: 3000px;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
-.Navforside {
-  margin: 0;
-  text-align: center;
-  width: 100%;
-  list-style: none;
-  padding-top: 20px;
+
+.topspanbg {
+  height: 7em;
+  background: linear-gradient(180deg, #003140, #8B1E46), url("square_bg.png");
+  background-blend-mode: overlay;
+
+  /*animation: gradient 8s ease-out infinite;
+  animation-direction: alternate;*/
 }
 
-.Navforside li {
-  width: 10%;
-  min-width: 150px;
-  text-decoration: none;
-  display: inline-block;
-  border-right: solid 1.5px;
-  border-left: solid 1.5px;
+#forsiden {
+  min-width: 100vw;
 }
 
-.Navforside ul {
-  padding: 0;
+img {
+  height: auto;
+  padding: 6px 0 0 10px;
+  max-width: 8em;
 }
 
-.Navforside a {
-  list-style: none;
-  text-decoration: none;
-  color: black;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+.topspan {
+  width: 265%;
+  height: 25vh;
+  background: #F2F2F2;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -4em;
+  left: -83%;
+  transform: rotate(-2deg);
+
+  z-index: 1;
+
+  /*animation: gradualbottom 8s ease-in-out infinite;
+  animation-direction: alternate;*/
 }
 
-.Navforside a:hover {
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 800px) {
-
-  .Navforside {
-    padding-top: 35px;
+@keyframes gradual {
+  to {
+    width: 240%;
+    height: 28vh;
   }
-
-  .Navforside li {
-    width: 23%;
-  }
-
-  .Navforside a {
-    font-size: 30px;
-  }
 }
-video{
-  box-shadow: none;
-}
-.video{
+
+.video {
+  position: relative;
   display: block;
-  max-width: 1000px;
+  box-shadow: none;
+  margin: auto;
+  margin-bottom: 10vh;
 
-  margin-left: auto;
-  margin-right: auto;
+  z-index: 5;
+}
 
+video {
+  min-width: 60vw;
+  max-width: 80vw;
+  margin-bottom: 5vh;
+}
+
+/* Området man trykker */
+#arrow-toggle {
+  display: block;
+  position: relative;
+  height: 7em;
+  width: 9em;
+  opacity: 0;
+  margin: auto;
+  margin-bottom: -5em;
+
+
+  z-index: 4;
+
+  cursor: pointer;
+}
+
+
+section:hover > .arrows {
+  animation: gradient 2s ease infinite;
+
+  width: 35px;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(.26,.29,.42,.81);
+}
+
+.arrows:hover {
+  animation: gradient 2s ease infinite;
+}
+
+
+.arrows {
+  display: block;
+  height: 2px;
+  width: 60px;
+  position: relative;
+  margin-left: 50%;
+  margin-right: 50%;
+
+  z-index: 3;
+
+  background: linear-gradient(0deg, #003140, #dd3565);
+  background-size: 100% 200%;
+
+  transition: width 0.8s ease-out;
+}
+
+@keyframes gradienttopspan {
+   0%  {background-position:49% 0%}
+   50% {background-position:52% 100%}
+   100%{background-position:49% 0%}
+}
+
+@keyframes gradient {
+   0%  {background-position:51% 0%}
+   50% {background-position:50% 100%}
+   100%{background-position:51% 0%}
+}
+
+#arrow {
+  transform-origin: 6px 15px;
+  transform: rotate(-135deg);
+}
+
+#arrow2 {
+  transform-origin: 30px 13.2px;
+  transform: rotate(-45deg);
+}
+
+#arrowtext {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  color: #003140;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: -7em;
+  width: 100px;
+  text-align: center;
+
+  z-index: 2;
+}
+
+
+/*lager buen som går mot høyre*/
+.spanner {
+  width: 265%;
+  height: 9em;
+  border-radius: 100%;
+  background: #F2F2F2;
+  position: absolute;
+  right: -5%;
+  margin-top: -3em;
+  transform: rotate(-1deg);
+
+  z-index: 1;
+
+  /*animation: gradualtop 8s ease-in-out infinite;
+  animation-direction: alternate;*/
+}
+
+@keyframes gradualtop {
+  to {
+    width: 130%;
+  }
+}
+
+/*muligheten for noe inne i kurvene*/
+.spanner div {
+  font-size: 32px;
+  text-align: center;
+  position: relative;
+  left: 70vw;
+  bottom: -120%;
+}
+
+/*bakgrunnen som gjør at man ser buene over og under*/
+.spannerbackground {
+  margin-top: 4em;
+  height: 20em;
+  background: linear-gradient(180deg, #C61648, #003140), url("square_bg.png");
+  background-blend-mode: overlay;
+  background-repeat: repeat;
+
+  z-index: 1;
+
+}
+
+.spanner2 {
+  width: 265%;
+  height: 30vh;
+  background: #F2F2F2;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -4em;
+  margin-bottom: -4em;
+  left: -40%;
+
+  z-index: 1;
+
+  /*animation: gradualbottom 8s ease-in-out infinite;
+  animation-direction: alternate;*/
+}
+
+@keyframes gradualbottom {
+  to {
+    width: 170%;
+    height: 20vh;
+  }
 }
