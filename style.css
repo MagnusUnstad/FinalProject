@@ -192,7 +192,7 @@ section:hover > .arrows {
 .mainContentBox {
 	margin-top: 5em;
 	position: relative;
-	width:60%;
+	width:60vw;
 	background-color:#f2f2f2;
 	margin-left:20vw;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
