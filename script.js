@@ -82,7 +82,7 @@ function visVideo() {
 }
 
 
-const videoOverlay = document.getElementById('myModal');
+const videoOverlay = document.getElementById('popup');
 const span = document.getElementsByClassName("close")[0];
 
 
