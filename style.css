@@ -200,13 +200,19 @@ ol {
 	right:0;
 	word-wrap: break-word;
 }
+
+.fixed {
+	position:fixed;
+	margin-top:6vh;
+}
+
 .sideBarBoxHeader {
 	width:100%;
 	background-color:#EC644B;
-
-
 	float:right;
 }
+
+
 .sideBarBox a {
 	text-decoration:none;
 	color:#333333;
@@ -402,6 +408,7 @@ ol {
 		.forsideContainer {
 		  background-image:url(legemedipad.jpg);
 			background-repeat:no-repeat;
+			background-position: center;
 
 		}
 
