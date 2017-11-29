@@ -35,53 +35,32 @@ function onTabPress() {
             box.classList.toggle("hidden");
         }
     }
-    //Henter scrollposisjon og kjører colorChanger med y-verdien
-    /* Kommenterer ut denne da den ikke fungerer som den skal
-function activeLink() {
-    let lis = document.getElementById("sBB").getElementsByTagName("li");
-    window.addEventListener('scroll', function(e) {
-        let scrollPosition = window.scrollY;
-        colorChanger(scrollPosition);
-    });
 
-    function colorChanger(y) {
-            let styleTo = "rgba(240,52,52,1)";
-            if (y > 0 && y < 800) {
-                clearColors(0);
-                lis[0].style.color = styleTo;
-            } else if (y > 800 && y < 1400) {
-                clearColors(1);
-                lis[1].style.color = styleTo;
-            } else if (y > 1400) {
-                clearColors(2);
-                lis[2].style.color = styleTo;
-            }
-
-        }
-        //Sørger for at linkene som ikke er aktive er sorte
-    function clearColors(k) {
-
-        for (let i = 0; i < lis.length; i++) {
-            if (!(k == i)) {
-                lis[i].style.color = "#333333";
-            }
-        }
-    }
-}
-activeLink();
-*/
-
-//Script for progressbar
+//Script for progressbar og sticky sidebar
 let maxHeight = document.body.offsetHeight - window.innerHeight; //Høyden på hele siden
-let bar = document.getElementById("progressbar-frem"); //Målelementet
+let bar = document.getElementById("progressbar-frem"); //Målelementet, progressBar
+let sideBar = document.getElementById("slider"); //Målelement, sidebar
+let offset = sideBar.offsetTop; //Offset for sidebar
 window.addEventListener('scroll', function(e) {
     let scrollPosition = window.scrollY;
     progressBar(scrollPosition);
+    stickyMenu();
 });
 function progressBar(scrollPosition) {
     let progressBarPosition = Math.floor((scrollPosition / maxHeight) * 100); //Tilsvarer prosent som er scrollet på siden
     bar.style.width = progressBarPosition + "vw";
 }
+
+//Script for sticky meny
+function stickyMenu() {
+  if (window.pageYOffset >= offset-50) {
+    sideBar.classList.add("fixed");
+  } else {
+    sideBar.classList.remove("fixed");
+  }
+}
+
+
 
 //Lukker menyen ved trykk på en av lenkene. Uten denne må du lukke menyen manuelt etter trykk
 function checkBoxCloser() {
