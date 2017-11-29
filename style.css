@@ -91,8 +91,10 @@ body {
     margin: 15vh auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
+		text-align:center;
 }
+
 .video {
   width:100%;
 }
@@ -413,6 +415,15 @@ ol {
 			background-repeat:no-repeat;
 			background-position: center;
 
+		}
+		.appOverlay {
+		    background-color: #fefefe;
+		    margin: 15vh auto;
+				text-align:center;
+				width:auto;
+		}
+		.appOverlay iframe {
+			width:auto;
 		}
 
 
