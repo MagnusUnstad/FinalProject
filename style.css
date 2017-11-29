@@ -36,7 +36,6 @@ body {
   margin:0 auto;
   border-radius:50%;
   background-color:rgba(255,255,255,0.7);
-  /* Sentrerer horisontalt og vertikalt */
   position:absolute;
   top:50%;
   left:50%;
@@ -85,7 +84,7 @@ body {
     margin: 15vh auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; 
+    width: 80%;
 }
 .video {
   width:100%;
@@ -141,7 +140,6 @@ ol {
 .mainContentHeader {
 	width:100%;
 	background-color:#F03434; /* RØD */
-	/*height:80px;*/
 	display:inline-block;
 }
 .logo {
@@ -163,7 +161,6 @@ ol {
 .secondContentHeader {
 	width:100%;
 	background-color:#446CB3; /* BLÅ */
-	/*height:80px;*/
 	display:inline-block;
 }
 .secondContentHeader h2 {
@@ -335,32 +332,24 @@ ol {
 			top: 20px;
 			right: 3em;
 			cursor: pointer;
-			opacity: 0; /* hide this */
-			z-index: 2; /* and place it over the hamburger */
-			-webkit-touch-callout: none;
+			opacity: 0;
+			z-index: 2;
 		}
 
 
-		/*
-		 * Transform all the slices of hamburger
-		 * into a crossmark.
-		 */
+		/* Gjør spansene om til kryss */
 		#menuToggle input:checked ~ span	{
-		  transform: rotate(45deg) translate(-5px, 1px);
+		  transform: rotate(45deg) translate(-5px, -2px);
 		  background: #F03434;
 		}
-		/*
-		 * But let's hide the middle one.
-		 */
+		/* midt-span skjuling */
 		#menuToggle input:checked ~ span:nth-last-child(3)
 		{
 		  opacity: 0;
 		  transform: rotate(0deg) scale(0.2, 0.2);
 		}
 
-		/*
-		 * Ohyeah and the last one should go the other direction
-		 */
+		/* snur nederste span */
 		#menuToggle input:checked ~ span:nth-last-child(2) {
 		  transform: rotate(-45deg) translate(0, 0px);
 		}
@@ -379,10 +368,7 @@ ol {
 		}
 
 
-		/*
-		 * Make this absolute positioned
-		 * at the top left of the screen
-		 */
+		/*meny plassert utenfor skjerm*/
 		#menu {
 		  position: fixed;
 		  width: 100%;
