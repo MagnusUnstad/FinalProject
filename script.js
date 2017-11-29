@@ -74,21 +74,27 @@ document.getElementById("menu").onclick = function() {checkBoxCloser()}
 //JS for forside
 const legen = document.getElementById("legen");
 const video = document.getElementById("video");
-
+const openApp = document.getElementById("openApp");
 legen.onclick = function(){visVideo()};
-
+openApp.onclick = function(){visApp()};
 function visVideo() {
   videoOverlay.style.display = "block";
 }
+function visApp() {
+  appOverlay.style.display = "block";
+}
 
 
-const videoOverlay = document.getElementById('popup');
-const span = document.getElementsByClassName("close")[0];
+const videoOverlay = document.getElementById('popup'); //video
+const appOverlay = document.getElementById('appPopup');
+
 
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == videoOverlay) {
+    if (event.target == videoOverlay || (event.target == appOverlay)) {
       videoOverlay.style.display = "none";
+      appOverlay.style.display = "none";
+
     }
 }

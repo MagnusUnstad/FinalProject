@@ -86,6 +86,13 @@ body {
     border: 1px solid #888;
     width: 80%;
 }
+.appOverlay {
+    background-color: #fefefe;
+    margin: 15vh auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
 .video {
   width:100%;
 }
