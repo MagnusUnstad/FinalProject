@@ -199,6 +199,17 @@ button:focus{
 outline: 3px rgb(0,0,255) solid;
 transition: all 0s;
 }
+.popupKryss {
+	padding-bottom:5px;
+	float:right;
+	color:#333333;
+}
+.popupKryss:hover {
+	cursor: pointer;
+}
+.popupKryss:focus {
+	outline: 3px rgb(0,0,255) solid;
+}
 
 /*------------------------------------*\
   #CONTENTHEADERS

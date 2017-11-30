@@ -86,13 +86,14 @@ function visApp() {
 
 
 const videoOverlay = document.getElementById('popup'); //video
-const appOverlay = document.getElementById('appPopup');
+const appOverlay = document.getElementById('appPopup'); //app
+const popupKryss = document.getElementById('popupKryss'); //lukkeknapp
 
 
 
 //Lukker popupene ved klikk utenfor popupen
 window.onclick = function(event) {
-    if (event.target == videoOverlay || (event.target == appOverlay)) {
+    if (event.target == videoOverlay || (event.target == appOverlay || event.target == popupKryss || event.target == popupKryss1)) {
       videoOverlay.style.display = "none";
       appOverlay.style.display = "none";
 
