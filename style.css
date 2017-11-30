@@ -3,12 +3,12 @@ body {
 	padding:0;
 	background-color:;
 	font-family:sans-serif;
-	background-image:url("square_bg.png");
+	background-image:url("ressurser/square_bg.png");
 }
 
 /* forside */
 .forsideContainer {
-  background-image:url(legemedipadtransparent.png);
+  background-image:url(ressurser/legemedipadtransparent.png);
   height:100vh;
   background-size:cover;
 
@@ -152,7 +152,7 @@ ol {
 	display:inline-block;
 }
 .logo {
-	background-image:url("logo.png");
+	background-image:url("ressurser/logo.png");
 	background-repeat: no-repeat;
 	background-size:cover;
 	height:100px;
@@ -413,7 +413,7 @@ ol {
 
 		}
 		.forsideContainer {
-		  background-image:url(legemedipadmobil.png);
+		  background-image:url(ressurser/legemedipadmobil.png);
 			background-repeat:no-repeat;
 			background-position: center;
 
