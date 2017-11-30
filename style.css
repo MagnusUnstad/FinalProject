@@ -1,3 +1,4 @@
+
 body {
 	margin: 0;
 	padding: 0;
@@ -6,15 +7,19 @@ body {
 	scroll-behavior: smooth;
 }
 
+
+
+
+
 /*------------------------------------*\
   #FORSIDE
 \*------------------------------------*/
+
 .forsideContainer {
   background-image: url(ressurser/legemedipadtransparent.png);
   height: 100vh;
   background-size: cover;
 }
-
 
 .header {
   padding-bottom: 5px;
@@ -115,6 +120,7 @@ body {
 .video {
   width: 100%;
 }
+
 
 
 
@@ -493,10 +499,10 @@ ol {
 
 
 	.appOverlay {
-	    background-color: #fefefe;
-	    margin: 15vh auto;
-			text-align: center;
-			width: auto;
+	  background-color: #fefefe;
+	  margin: 15vh auto;
+		text-align: center;
+		width: auto;
 	}
 
 	.appOverlay iframe {
