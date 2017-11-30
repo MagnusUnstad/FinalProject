@@ -41,8 +41,8 @@ body {
 
 .forsidesirkel {
 	position: absolute;
-  height: 400px;
-  width: 	400px;
+  height: 60%;
+  width: 	30%;
 	top: 		50%;
 	left: 	50%;
   margin: 0 auto;
@@ -174,32 +174,9 @@ ol {
 	margin: 5% 5% 0 5%;
 }
 
-/*------------------------------------*\
-  #KNAPPER
-\*------------------------------------*/
 
-button {
-	background-color: rgb(194, 37, 73);
-	border: black solid 1px;
-	text-align: center;
-	width: 150px;
-	height: 28px;
-	transition: all 0.5s;
-	padding-top: 6px;
-	padding-bottom: 22px;
-	color: white;
-	font-size: 16px;
-	box-shadow: 0px 2px 0px #000000;
 
-}
-button:hover{
-	transform: translate(0, 2px);
-	box-shadow: 0px 0px 0px #000000;
-}
-button:focus{
-outline: 3px rgb(0,0,255) solid;
-transition: all 0s;
-}
+
 
 /*------------------------------------*\
   #CONTENTHEADERS
