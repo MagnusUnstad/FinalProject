@@ -90,7 +90,7 @@ const appOverlay = document.getElementById('appPopup');
 
 
 
-// When the user clicks anywhere outside of the modal, close it
+//Lukker popupene ved klikk utenfor popupen
 window.onclick = function(event) {
     if (event.target == videoOverlay || (event.target == appOverlay)) {
       videoOverlay.style.display = "none";
