@@ -126,6 +126,11 @@ h3 {
   width: 100%;
 }
 
+
+/*-----------------------*/
+/*  #ARROWS
+/*-----------------------*/
+
 #arrow-toggle {
   display: block;
   position: relative;
@@ -133,6 +138,7 @@ h3 {
   width: 9em;
   opacity: 0;
   margin: auto;
+	margin-top: -9em;
   margin-bottom: -5em;
 
 
@@ -171,7 +177,7 @@ section:hover > .arrows {
 
   z-index: 4;
 
-  background: linear-gradient(180deg, #0077aa, #19aaaa);
+  background: linear-gradient(180deg, BLACK, RED);
   background-size: 100% 200%;
 
   transition: width 0.8s ease-out;
@@ -194,7 +200,7 @@ section:hover > .arrows {
   color: #003140;
   margin: auto;
   margin-top: 2em;
-  margin-bottom: -7em;
+  margin-bottom: 2.3em;
   width: 100px;
   text-align: center;
 
