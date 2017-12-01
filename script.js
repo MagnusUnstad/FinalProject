@@ -74,21 +74,31 @@ document.getElementById("menu").onclick = function() {checkBoxCloser()}
 //JS for forside
 const legen = document.getElementById("legen");
 const video = document.getElementById("video");
-
+const openApp = document.getElementById("openApp");
+const introvideo = document.getElementById("video");
 legen.onclick = function(){visVideo()};
-
+openApp.onclick = function(){visApp()};
 function visVideo() {
   videoOverlay.style.display = "block";
+  introvideo.play();
+}
+function visApp() {
+  appOverlay.style.display = "block";
 }
 
 
-const videoOverlay = document.getElementById('myModal');
-const span = document.getElementsByClassName("close")[0];
+const videoOverlay = document.getElementById('popup'); //video
+const appOverlay = document.getElementById('appPopup'); //app
+const popupKryss = document.getElementById('popupKryss'); //lukkeknapp
 
 
-// When the user clicks anywhere outside of the modal, close it
+
+//Lukker popupene ved klikk utenfor popupen
 window.onclick = function(event) {
-    if (event.target == videoOverlay) {
+    if (event.target == videoOverlay || (event.target == appOverlay || event.target == popupKryss || event.target == popupKryss1)) {
       videoOverlay.style.display = "none";
+      appOverlay.style.display = "none";
+      introvideo.pause(); 
+
     }
 }
