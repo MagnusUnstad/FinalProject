@@ -400,7 +400,7 @@ transition: all 0s;
  /* UK flag */
 .sideBarBox ul img {
 	position: relative;
-	left: 80%;
+	left: 70%;
 
 	transform: scale(0.7);
 }
@@ -470,8 +470,12 @@ figure {
 	transition: all 0.1s linear;
 }
 
-
-
+@media screen and (max-width: 1200px) {
+	.sideBarBox {
+		width: 25%;
+		margin-right: 9%;
+	}
+}
 
 
 @media screen and (max-width: 800px) {
