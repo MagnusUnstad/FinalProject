@@ -412,17 +412,49 @@ transition: all 0s;
 	margin-right: 20%;
 	border-width: 3px;
 	border: 2px solid transparent;
-  background-image: linear-gradient(90deg, #F03434, #446CB3);
-  background-origin: border-box;
-  background-size: 100% 2px;
-  background-position: bottom right, bottom left;
-  background-repeat: no-repeat;
+
+	transition: all 0.3s ease-in-out;
+
+	background-origin: border-box;
+	background-size: 100% 2px;
+	background-position: bottom right, bottom left;
+	background-repeat: no-repeat;
 
 	transition: all 0.3s ease-in-out;
 }
-.sideBarBox a {
-	display:block;
+
+.grad1 {
+	background-image: linear-gradient(90deg, #F03434, #446CB3);
 }
+
+.grad2 {
+	background-image: linear-gradient(90deg, #446CB3, #D2527F);
+}
+
+.grad3 {
+	background-image: linear-gradient(90deg, #D2527F, #27AE60);
+}
+
+.grad4 {
+	background-image: linear-gradient(90deg, #27AE60, #F64747);
+}
+
+.grad5 {
+	background-image: linear-gradient(90deg, #F64747, #913D88);
+}
+
+.grad6 {
+	background-image: linear-gradient(90deg, #913D88, #F03434);
+}
+
+.grad7 {
+	background-image: linear-gradient(90deg, #F03434, #446CB3, #D2527F, #27AE60, #F64747, #913D88);
+}
+
+.sideBarBox a {
+	display: block;
+}
+
 .UKflag {
 	border-bottom: 0px !important;
 }
