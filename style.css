@@ -185,12 +185,12 @@ h3 {
 
 .mainContentBox p {
 	margin: 1% 5% 2.5% 5%;
+	min-width: 50%;
 }
 
 .floatRightBilde {
 	position: relative;
 	max-width: 300px;
-	margin-top: 5%;
 
 }
 .figcaption {
@@ -202,17 +202,19 @@ figure {
 }
 .bildetekst {
 	width:300px;
-	float:right;
+	float: right;
 	border: 1px solid #F03434;
 	margin-right: 0.5%;
 	text-align: center;
 	font-style: italic;
+
 }
 
 .bildetekst2 {
 	width:300px;
 	float:right;
-	margin-right: 5%;
+	margin-right: 4%;
+	margin-left: 4%;
 	text-align: center;
 }
 
