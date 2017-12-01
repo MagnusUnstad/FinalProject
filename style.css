@@ -148,90 +148,6 @@ h3 {
 }
 
 
-/*-----------------------*/
-/*  #ARROWS
-/*-----------------------*/
-
-#arrow-toggle {
-  display: block;
-  position: relative;
-  height: 7em;
-  width: 9em;
-  opacity: 0;
-  margin: auto;
-	margin-top: -9em;
-  margin-bottom: -5em;
-
-
-  z-index: 5;
-
-  cursor: pointer;
-}
-
-
-section:hover > .arrows {
-  animation: gradient 2s ease infinite;
-
-  width: 35px;
-  transition: 0.5s;
-  transition-timing-function: cubic-bezier(.26,.29,.42,.81);
-}
-
-@keyframes gradient {
-	0%	{background-position:51% 0%}
-  50%	{background-position:50% 100%}
-  100%{background-position:51% 0%}
-}
-
-.arrows:hover {
-  animation: gradient 2s ease infinite;
-}
-
-
-.arrows {
-  display: block;
-  height: 2px;
-  width: 60px;
-  position: relative;
-  margin-left: 50%;
-  margin-right: 50%;
-
-  z-index: 4;
-
-  background: linear-gradient(180deg, BLACK, RED);
-  background-size: 100% 200%;
-
-  transition: width 0.8s ease-out;
-}
-
-#arrow {
-  transform-origin: 6px 15px;
-  transform: rotate(-135deg);
-}
-
-#arrow2 {
-  transform-origin: 30px 13.2px;
-  transform: rotate(-45deg);
-}
-
-#arrowtext {
-  display: block;
-  position: relative;
-  font-size: 16px;
-  color: #003140;
-  margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2.3em;
-  width: 100px;
-  text-align: center;
-
-  z-index: 4;
-}
-
-
-
-
-
 
 /*------------------------------------*\
   #HOVEDSIDE
@@ -264,12 +180,39 @@ section:hover > .arrows {
 }
 
 .floatLeftParagraph {
-	float: left;
-	width: 50%;
+	position: relative;
 }
 
 .mainContentBox p {
 	margin: 1% 5% 2.5% 5%;
+}
+
+.floatRightBilde {
+	position: relative;
+	max-width: 300px;
+	margin-top: 5%;
+
+}
+.figcaption {
+	float:right;
+}
+
+figure {
+	margin:0;
+}
+.bildetekst {
+	width:300px;
+	float:right;
+	border: 1px solid #F03434;
+	margin-right: 0.5%;
+	text-align: center;
+}
+
+.bildetekst2 {
+	width:300px;
+	float:right;
+	margin-right: 0.5%;
+	text-align: center;
 }
 
 ol {
@@ -497,24 +440,6 @@ transition: all 0s;
 
 .sideBarBox li:hover {
 	margin-left: 2%;
-}
-
-.floatRightBilde {
-	float: right;
-	max-width: 300px;
-	margin-top: 5%;
-	margin-right: 5%;
-
-}
-.figcaption {
-	float:right;
-}
-figure {
-	margin:0;
-}
-.bildetekst {
-	width:300px;
-	float:right;
 }
 
 #accessibilityBox {
