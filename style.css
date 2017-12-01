@@ -206,12 +206,13 @@ figure {
 	border: 1px solid #F03434;
 	margin-right: 0.5%;
 	text-align: center;
+	font-style: italic;
 }
 
 .bildetekst2 {
 	width:300px;
 	float:right;
-	margin-right: 0.5%;
+	margin-right: 5%;
 	text-align: center;
 }
 
