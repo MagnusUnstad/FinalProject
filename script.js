@@ -14,7 +14,7 @@ gradient(); */
 
 /* Script for tab-funksjon. Åpner accessibilityBox hvis man trykker på tab */
 let pressNr = 0; //Hvor mange trykk
-let hvorMangeLinker = 4; //Denne MÅ være på antall linker i menyen
+let hvorMangeLinker = 7; //Denne MÅ være på antall linker i menyen
 document.addEventListener("keydown", function(event) {
 
     if (event.keyCode == 9 && !(event.shiftKey)) {
