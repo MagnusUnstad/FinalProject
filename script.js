@@ -1,4 +1,5 @@
 /* Dette scriptet lager underlinjer med gradient */
+/*
 function gradient() {
     let gradient = 1;
     let lis = document.getElementById("sBB").getElementsByTagName("li");
@@ -7,7 +8,7 @@ function gradient() {
         lis[i].style.borderBottom = "2px solid rgba(240,52,52," + gradient + ")";
     }
 }
-gradient();
+gradient(); */
 
 
 
@@ -95,10 +96,10 @@ const popupKryss = document.getElementById('popupKryss'); //lukkeknapp
 
 //Lukker popupene ved klikk utenfor popupen
 window.onclick = function(event) {
-    if (event.target == videoOverlay || (event.target == appOverlay || event.target == popupKryss || event.target == popupKryss1)) {
+    if (event.target == videoOverlay || event.target == appOverlay || event.target == popupKryss || event.target == popupKryss1) {
       videoOverlay.style.display = "none";
       appOverlay.style.display = "none";
-      introvideo.pause(); 
+      introvideo.pause();
 
     }
 }
