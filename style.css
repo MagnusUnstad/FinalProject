@@ -126,6 +126,81 @@ h3 {
   width: 100%;
 }
 
+#arrow-toggle {
+  display: block;
+  position: relative;
+  height: 7em;
+  width: 9em;
+  opacity: 0;
+  margin: auto;
+  margin-bottom: -5em;
+
+
+  z-index: 5;
+
+  cursor: pointer;
+}
+
+
+section:hover > .arrows {
+  animation: gradient 2s ease infinite;
+
+  width: 35px;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(.26,.29,.42,.81);
+}
+
+@keyframes gradient {
+	0%	{background-position:51% 0%}
+  50%	{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}
+
+.arrows:hover {
+  animation: gradient 2s ease infinite;
+}
+
+
+.arrows {
+  display: block;
+  height: 2px;
+  width: 60px;
+  position: relative;
+  margin-left: 50%;
+  margin-right: 50%;
+
+  z-index: 4;
+
+  background: linear-gradient(180deg, #0077aa, #19aaaa);
+  background-size: 100% 200%;
+
+  transition: width 0.8s ease-out;
+}
+
+#arrow {
+  transform-origin: 6px 15px;
+  transform: rotate(-135deg);
+}
+
+#arrow2 {
+  transform-origin: 30px 13.2px;
+  transform: rotate(-45deg);
+}
+
+#arrowtext {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  color: #003140;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: -7em;
+  width: 100px;
+  text-align: center;
+
+  z-index: 4;
+}
+
 
 
 
