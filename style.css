@@ -281,7 +281,7 @@ transition: all 0s;
 
 .thirdContentHeader {
 	width: 100%;
-	background-color: #F7CA18; /* GUL */
+	background-color: #D2527F; /* rosa */
 	display: inline-block;
 }
 
@@ -494,7 +494,12 @@ figure {
 	.sideBarBoxHeader {
 		display:none;
 	}
+	#menuToggle {
+		background-color:#EC644B;
+		padding:10px;
 
+		border-radius:10%;
+	}
 
 	#menuToggle span {
 		display: block;
@@ -502,12 +507,10 @@ figure {
 		height: 8px;
 		margin-bottom: 6px;
 		position: relative;
-
 		transform-origin: 4px 0px;
 		transition: transform 0.5s cubic-bezier(0.9,0.2,0.05,1.0),
 		background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
 		opacity 0.55s ease;
-
 		background: #333333;
 		border-radius: 3px;
 		z-index: 1;
