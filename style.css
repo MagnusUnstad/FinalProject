@@ -196,18 +196,25 @@ h3 {
 }
 .figcaption {
 	float:right;
+	position: relative;
+
+	z-index: 4;
 }
 
 figure {
 	margin:0;
 }
+
 .bildetekst {
+	position: relative;
 	width:300px;
 	float: right;
 	border: 1px solid #F03434;
 	margin-right: 0.5%;
 	text-align: center;
 	font-style: italic;
+
+	z-index: 3;
 
 }
 
