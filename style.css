@@ -44,6 +44,7 @@ h3 {
 }
 
 .forsidesirkel {
+<<<<<<< HEAD
 	position: absolute;
   height: 400px;
   width: 	400px;
@@ -54,6 +55,18 @@ h3 {
   background-color: rgba(255,255,255,0.7);
 
   transform: translate(-50%,-50%);
+=======
+  height:500px;
+  width:500px;
+  margin:0 auto;
+  border-radius:50%;
+  background-color:rgba(255,255,255,0.7);
+  /* Sentrerer horisontalt og vertikalt */
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+>>>>>>> b93e27af6fb41221f6eeaee87d903c238a489dd5
 }
 
 .forsidesirkel img {
