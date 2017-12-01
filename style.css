@@ -14,6 +14,15 @@ body {
   #FORSIDE
 \*------------------------------------*/
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.forsidesirkel img:hover {
+		animation: none !important;
+	}
+	.forsidesirkel img {
+		animation: none !important;
+	}
+}
+
 .forsideContainer {
   background-image: url(ressurser/legemedipadtransparent.png);
   height: 100vh;
@@ -83,6 +92,8 @@ h3 {
     transform: translate(-50%, -55%);
   }
 }
+
+
 
 
 /* popup bakgrunn */
