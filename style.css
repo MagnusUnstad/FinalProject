@@ -416,6 +416,9 @@ transition: all 0s;
 .figcaption {
 	float:right;
 }
+figure {
+	margin:0;
+}
 .bildetekst {
 	width:300px;
 	float:right;
