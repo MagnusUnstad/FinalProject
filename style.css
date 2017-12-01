@@ -14,6 +14,15 @@ body {
   #FORSIDE
 \*------------------------------------*/
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.forsidesirkel img:hover {
+		animation: none !important;
+	}
+	.forsidesirkel img {
+		animation: none !important;
+	}
+}
+
 .forsideContainer {
   background-image: url(ressurser/legemedipadtransparent.png);
   height: 100vh;
@@ -39,6 +48,7 @@ body {
 h3 {
 	font-size:150%;
 	margin-left:5%;
+	margin-top:0;
 	color:#333333;
 	text-shadow: 0 1px 2px rgba(0,0,0,0.20);
 }
@@ -85,6 +95,8 @@ h3 {
 }
 
 
+
+
 /* popup bakgrunn */
 .popup {
   display: none;
@@ -124,6 +136,13 @@ h3 {
 
 .video {
   width: 100%;
+}
+.noscript {
+	text-align:center;
+	background-color:#f2f2f2;
+	padding:2% 0 2% 0;
+	color:red;
+	font-weight:bold;
 }
 
 
@@ -285,7 +304,7 @@ button:hover{
 	cursor:pointer;
 }
 button:focus{
-outline: 3px rgb(0,0,255) solid;
+outline: 3px black solid;
 transition: all 0s;
 }
 .popupKryss {
@@ -466,7 +485,7 @@ transition: all 0s;
  /* UK flag */
 .sideBarBox ul img {
 	position: relative;
-	left: 80%;
+	left: 70%;
 
 	transform: scale(0.7);
 }
@@ -484,6 +503,9 @@ transition: all 0s;
 }
 .figcaption {
 	float:right;
+}
+figure {
+	margin:0;
 }
 .bildetekst {
 	width:300px;
@@ -533,8 +555,12 @@ transition: all 0s;
 	transition: all 0.1s linear;
 }
 
-
-
+@media screen and (max-width: 1200px) {
+	.sideBarBox {
+		width: 25%;
+		margin-right: 9%;
+	}
+}
 
 
 @media screen and (max-width: 800px) {

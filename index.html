@@ -39,12 +39,17 @@
     <div class="header">
       <h1>OMSORG</h1>
     </div>
-
+    <noscript>
+      <p class="noscript">Denne siden bruker JavaScript. Dersom nettleseren din ikke støtter JavaScript, kan du se vår animasjon
+        <a href="ressurser/introvideo.mp4">her</a>.
+      </p>
+    </noscript>
     <div class="forsidesirkel">
       <img src="ressurser/legenplayno.svg" id="legen" alt="Omsorg logo">
     </div>
 
       <!-- popup -->
+
     <div id="popup" class="popup">
       <!-- popup content -->
       <div class="videoOverlay">
@@ -97,8 +102,10 @@ I dag har vi løsninger som tidvis fungerer, men er unødvendig kompliserte. Det
 </p>
 
       <div class="bildetekst">
+        <figure>
         <img src="ressurser/pekeark.gif" alt="Utsnitt fra Kommunikasjonsperm, Sykehuset Østfold" class="floatRightBilde">
         <figcaption>Utsnitt fra Kommunikasjonsperm, Sykehuset Østfold</figcaption>
+      </figure>
       </div>
 
       <p class="floatLeftParagraph">Google Translate er altså ofte brukt, men har i mange år vært kjent som en dårlig oversetter. I enkelte situasjoner kan det være livsviktig å finne frem til korrekt informasjon. Translate kan ha problemer med for eksempel liknende ord, og viktige detaljer kan forsvinne i oversettelsen. Da er et essensielt at det finnes forhåndsproduserte og gode oversettelser gjort av fagfolk.</p>
@@ -126,7 +133,6 @@ Prototypen støtter i dag arabisk og norsk. Dersom den blir ferdigutviklet vil d
 
 
 
-      </p>
     </div>
 
     <div class="mainContentBox" id="del3">
@@ -141,10 +147,17 @@ Prototypen støtter i dag arabisk og norsk. Dersom den blir ferdigutviklet vil d
 Kommunikasjonsmodulen er selve kjernen i applikasjonen. Her er det lagt opp til toveiskommunikasjon mellom helsearbeidere og pasienter. Både pasient og helsepersonell kan komme med utsagn eller stille spørsmål. Hvem som starter samtalen reguleres ved å trykke på knappen øverst i applikasjonen. Er orienteringen mot legeikonet, vil et spørsmål for eksempel være «Er du tørst?», men står den på pasientikonet vil samme utsagn bli «Jeg er tørst». En samtale vil deretter kunne utvikle seg med utgangspunkt i spørsmålet eller utsagnet.
   </p>
   <div class="bildetekst">
+    <figure>
     <img src="ressurser/ipad.png" alt="Montasje av en iPad satt opp med vår app" class="floatRightBilde">
     <figcaption>Montasje av en iPad satt opp med vår app. <b>Test vår prototype:</b> Vi har utviklet en interaktiv, nettbasert prototype av Omsorg. Test den ved å trykke på knappen under!
+
           <br>
-          <button type="button" name="button" id="openApp">Prøv prototypen</button></figcaption>
+          <noscript>
+          <p class="noscript">Denne siden bruker JavaScript. Dersom nettleseren din ikke støtter JavaScript, kan du se vår prototype
+            <a href="https://xd.adobe.com/embed/08f6b3cf-7eed-486d-abf0-b874fa8c6e2e/">her</a>.
+          </p>
+        </noscript>
+          <button type="button" name="button" id="openApp">Prøv prototypen</button></figcaption></figure>
   </div>
   <p class="floatLeftParagraph">Applikasjonen vil alltid spørre pasienten om de har forstått ved enden av en samtale. Da vil både pasient og helsearbeider få en klar bekreftelse om at samtalens innhold er forstått. At begge opplever en slik forståelse er med på å skape relasjoner og tillit mellom helsepersonell og pasient.</p>
   <h3 class="floatLeftParagraph">Modul 2 – Hendelser</h3>
