@@ -6,28 +6,51 @@ body {
   overflow-x: hidden;
   font-family: sans-serif;
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
+<<<<<<< HEAD
 .topspanbg {
   height: 10em;
 
   background: #003140;
   background: linear-gradient(180deg, #003140, #8B1E46);
   background-size: 500% 200%;
+=======
+
+.topspanbg {
+  height: 7em;
+  background: linear-gradient(180deg, #003140, #8B1E46), url("square_bg.png");
+  background-blend-mode: overlay;
+>>>>>>> 6b3e5ee54610ae2b5500232ec0efde56d7979904
 
   /*animation: gradient 8s ease-out infinite;
   animation-direction: alternate;*/
 }
 
+#forsiden {
+  min-width: 100vw;
+}
+
+img {
+  height: auto;
+  padding: 6px 0 0 10px;
+  max-width: 8em;
+}
+
 .topspan {
   width: 265%;
-  height: 30vh;
+  height: 25vh;
   background: #F2F2F2;
   border-radius: 200%;
   position: absolute;
   margin-top: -4em;
   left: -83%;
+<<<<<<< HEAD
   transform: rotate(-4deg);
+=======
+  transform: rotate(-2deg);
+>>>>>>> 6b3e5ee54610ae2b5500232ec0efde56d7979904
 
   z-index: 0;
 
@@ -56,13 +79,23 @@ body {
   display: block;
   box-shadow: none;
   margin: auto;
+<<<<<<< HEAD
 
+=======
+  margin-bottom: 10vh;
+>>>>>>> 6b3e5ee54610ae2b5500232ec0efde56d7979904
 
   z-index: 5;
 }
 
 video {
+<<<<<<< HEAD
   width: 80vw;
+=======
+  min-width: 60vw;
+  max-width: 80vw;
+  margin-bottom: 5vh;
+>>>>>>> 6b3e5ee54610ae2b5500232ec0efde56d7979904
 }
 
 /* Området man trykker */
@@ -82,24 +115,20 @@ video {
 }
 
 
-section:hover > #arrows {
-  animation: gradient 3s ease infinite;
+section:hover > .arrows {
+  animation: gradient 2s ease infinite;
 
   width: 35px;
-  transition: 1.5s;
+  transition: 0.5s;
   transition-timing-function: cubic-bezier(.26,.29,.42,.81);
 }
 
-#arrows:hover {
+.arrows:hover {
   animation: gradient 2s ease infinite;
 }
 
-section:hover > #arrowbody {
-  animation: gradient 3s ease infinite;
-}
 
-
-#arrows {
+.arrows {
   display: block;
   height: 2px;
   width: 60px;
@@ -112,7 +141,7 @@ section:hover > #arrowbody {
   background: linear-gradient(0deg, #003140, #dd3565);
   background-size: 100% 200%;
 
-  transition: width 1s ease-out;
+  transition: width 0.8s ease-out;
 }
 
 @keyframes gradienttopspan {
@@ -127,31 +156,14 @@ section:hover > #arrowbody {
    100%{background-position:51% 0%}
 }
 
-.arrow {
+#arrow {
   transform-origin: 6px 15px;
   transform: rotate(-135deg);
 }
 
-.arrow2 {
+#arrow2 {
   transform-origin: 30px 13.2px;
   transform: rotate(-45deg);
-}
-
-#arrowbody {
-  display: block;
-  height: 2px;
-  width: 47px;
-  position: relative;
-  margin: auto;
-
-  z-index: 2;
-
-  transform: rotate(270deg);
-
-  background: linear-gradient(0deg, #003140, #dd3565);
-  background-size: 400% 400%;
-
-  transition: width 1s ease-out;
 }
 
 #arrowtext {
@@ -172,12 +184,13 @@ section:hover > #arrowbody {
 /*lager buen som går mot høyre*/
 .spanner {
   width: 265%;
-  height: 8em;
+  height: 9em;
   border-radius: 100%;
   background: #F2F2F2;
   position: absolute;
   right: -5%;
   margin-top: -3em;
+  transform: rotate(-1deg);
 
   z-index: 1;
 
@@ -219,6 +232,7 @@ section:hover > #arrowbody {
   border-radius: 100%;
   position: absolute;
   margin-top: -4em;
+  margin-bottom: -4em;
   left: -40%;
   z-index: 0;
 
