@@ -104,7 +104,7 @@ I dag har vi løsninger som tidvis fungerer, men er unødvendig kompliserte. Det
       <p class="floatLeftParagraph">Aldri før har så mange pasienter hatt behov for oversetting i norsk helsevesen. Arbeidsinnvandrere, flyktninger og innvandrere med manglende norskkunnskaper øker. 4,1 % av Norges befolkning har flyktningbakgrunn, disse utgjør 30% av alle innvandrere. Flyktningestrømmen vi har opplevd de siste årene har ført til at mange møter et helsevesen de ikke kan kommunisere med. En slik sårbar gruppe i samfunnet er avhengig av relasjonsbygging og et helsevesenet de har tillit til, som kan ivareta og forstå deres behov. I alle grupper finner vi også mennesker med nedsatt funksjonsevne og analfabeter, eller personer med lav kompetanse i eget morsmål. Dagens løsninger ivaretar ikke disse gruppenes behov for hjelp i form av oversettingsverktøy som er universelt utformet og kultursensitivt.</p>
       <p class="floatLeftParagraph">Et av de problemene Oslo universitetssykehus fokuserer på er misforståelser. Ofte opplever de at pasienten og helsearbeideren tror de har forstått hverandre, men så viser det seg på et senere tidspunkt at det har oppfattet beskjeder forskjellig. Informasjon rundt prøvetaking, nye innkallinger og besøkstider går tapt. Det er viktig at slike detaljer ikke forsvinner i oversettelsen.
 Dagens løsning er mangelfull og gammeldags. Applikasjonen vi skal presentere vil hjelpe helsevesenet i vanskelige situasjoner og sørge for at pasientene får den hjelp og informasjon de har rett på.
-</p>
+      </p>
     </div>
 
     <div class="mainContentBox" id="del2">
@@ -123,40 +123,47 @@ Prototypen støtter i dag arabisk og norsk. Dersom den blir ferdigutviklet vil d
       <button type="button" name="button" id="openApp">Prøv prototypen</button>
 
 
-      <p>Videre ønsker vi å se på noe utvidet funksjonalitet som faller utenfor oppgavens grenser. Vi
-      Ønsker at appen skal kunne brukes i hele helsesektoren, derfor ønsker vi egne versjoner til,
-      utrykningspersonell, legevakter og poliklinikker. Målet er at programmer skal kunne brukes i
-      alle situasjoner hvor tolk ikke er tilgjengelig. Et mål er også å kunne bruke appen til å «ringe»
-      på sykepleier direkte fra rommet. Man skal også kunne sende forespørsler via appen, slik
-      som «jeg er tørst». Dette kan bli tidsbesparende for helsepersonellet da de slipper den
-      ekstra turen frem og tilbake for å finne behovet til pasienten. Samtidig som vi ønsker å
-      implementere slike endringer, må vi også sørge for å være forsiktig, slik at vi ikke lar appen
-      ta over for mye arbeid. Dette er for å sikre pasientens behandling.
+
 
       </p>
     </div>
 
     <div class="mainContentBox" id="del3">
       <div class="thirdContentHeader">
-        <h2>BRUKERTESTING</h2>
+        <h2>OM APPLIKASJONEN</h2>
       </div>
-      <p>Vi brukertestet appen slik som den er i dag 3.10.2017. Vi testet den på en medelev som skulle teste
-      seg gjennom 3 oppgaver:
-      1. Sett opp Appen, Pasienten din er fargeblind og snakker arabisk.
-      a. Respons: Testsubjektet fant raskt frem til innstillingsmenyen på venstre side språket
-      og modus ble endret helt problemfritt.
-      2. Spør pasienten din om h*n vil ha et glass vann.
-      a. Appen var i dette tilfellet i «Pasientmodus» Slik at testsubjektet måtte endre dette
-      før han kunne stille spørsmålet. Etter litt prøving kom subjektet frem til riktig
-      innstilling og kunne derfra enkelt navigere seg frem til spørsmålet.
-      Brukertestingen gikk veldig bra, tilbakemeldingen var at applikasjonen var intuitiv og forståelig. Vi
-      fikk også sjekket appen vår av studentavisen, som ga oss tilbakemelding om at vi måtte legge til
-      synliggjøring av hendelser i appen. Vi lagde derfor funksjoner som ga tilbakemelding til brukeren på
-      de endringer den måtte gjøre.</p>
+      <p>Gjennom utviklingsprosessen har det vært et hovedfokus å lage et produkt som alle kan bruke. Universell utforming og klare kontraster har vært viktig. Applikasjonen vår har en innstilling for høykontrast, som kan velges i hamburgermenyen. Da vil alle farger skifte til gul, hvit og sort. Det skal også, på et senere tidspunkt, utvikles en innstilling for svaksynte/blinde. Meningen er at helsearbeidere skal kunne spørre seg gjennom alle kategorier mens pasienten gir tommel opp for ja og tommel ned for nei. Dette sikrer at svaksynte får likeverdig tilgang på verktøyet som andre. Applikasjonen skal lese opp alt som blir trykket på dersom innstillingen «automatisk lyd» er på. Om denne er av, vil ting leses opp dersom man trykker på lydikonet, som finnes på alle kategorier og spørsmål.</p>
+      <p>Vi tar også hensyn til kultursensitivitet. For arabisk, som leses fra høyre, valgt som språk skal hele applikasjonen speilvendes slik at den lettere kan leses og brukes fra høyre side. Ikonene er lagd for at de skal være lette å forstå. Om gjenstandene som er avbildet på ikonene ikke er kjent fra før, vil man kjenne dem igjen etter ett døgn i Norge.</p>
+      <h3>Modul 1 - Kommunikasjon</h3>
+      <p>Slik ser vår løsning ut. Vi anbefaler at du prøver applikasjonen selv. Husk at dette bare er en prototype og derfor kan ikke alle funksjoner benyttes. De knappene som man kan interagere med vil lyse opp i applikasjonen om du trykker et sted hvor det ikke er noen funksjon.
+Kommunikasjonsmodulen er selve kjernen i applikasjonen. Her er det lagt opp til toveiskommunikasjon mellom helsearbeidere og pasienter. Både pasient og helsepersonell kan komme med utsagn eller stille spørsmål. Hvem som starter samtalen reguleres ved å trykke på knappen øverst i applikasjonen. Er orienteringen mot legeikonet, vil et spørsmål for eksempel være «Er du tørst?», men står den på pasientikonet vil samme utsagn bli «Jeg er tørst». En samtale vil deretter kunne utvikle seg med utgangspunkt i spørsmålet eller utsagnet.
+  </p>
+  <p>Applikasjonen vil alltid spørre pasienten om de har forstått ved enden av en samtale. Da vil både pasient og helsearbeider få en klar bekreftelse om at samtalens innhold er forstått. At begge opplever en slik forståelse er med på å skape relasjoner og tillit mellom helsepersonell og pasient.</p>
+  <h3>Modul 2 – Hendelser</h3>
+  <p>For å lagre denne informasjonen på pasienten må helsearbeideren logge inn i applikasjonen og velge sengeposten pasienten ligger på. Alle pasienter som har behov for oversettelse får registrert en bruker mens de ligger på sykehuset. På brukeren lagrer man romnummer og sengepost, matpreferanser, for eksempel halal eller vegansk, allergier og hvilken avdeling de ligger på. Når man er innlogget på en bruker vil fremtidige prøver og hendelser som opprettes lagres i systemet.</p>
     </div>
 
     <div class="mainContentBox" id="del4">
       <div class="fourthContentHeader">
+        <h2>BRUKERTESTING</h2>
+      </div>
+      <p>
+        Under hele utviklingsprosessen har applikasjonen vært brukertestet. Flere medstudenter har testet applikasjonen underveis og gitt oss verdifulle tilbakemeldinger. Underveis har også Maja fra Oslo Universitetssykehus testet applikasjonen og gitt tilbakemeldinger om deres forventninger. Å ha regelmessig kommunikasjon med oppdragsgiver har vært svært nyttig for utviklingen av produktet.
+      </p>
+      <p>Vi brukertestet også produktet vårt på tre sykepleiestudenter. Da de kommer til å bli en av de største brukergruppene av vårt produkt, er det særlig relevant å brukerteste med dem. Tilbakemeldingene vi fikk var gode, applikasjonen var et verktøy det var stort behov for i helsesektoren. Noen hadde allerede i praksis opplevd språkbarrierer, og mente at en slik applikasjon kunne hjulpet dem på veien. Når det kommer til brukergrensesnittet forsto de fleste hvordan applikasjonen skulle brukes, og mente den var relativt intuitiv. Det var noen som hadde problemer med å forstå hvordan innloggingen i modul 2 fungerer, og vi gjorde utifra dette nødvendige endringer i prototypen.</p>
+    </div>
+
+    <div class="mainContentBox" id="del5">
+      <div class="fifthContentHeader">
+        <h2>DESIGN AV WEBSIDE</h2>
+      </div>
+      <p>Hvilken plattform man velger å bruke nettsiden vår på skal ikke ha noe å si på hvor godt informasjonen formidles. Derfor har vi lagt mye arbeid i å gjøre nettsiden brukervennlig for dataskjermer så vel som mobil og nettbrett. Vi har brukt relative størrelser som sørger for god skalering. Vi har også brukt en CSS media tag for å tilpasse nettsiden bedre for mobilbruk. Her blir blant annet menyen om til en hamburgermeny for å spare plass på skjermen.</p>
+      <p>Et mål vi hadde både med applikasjonen og nettsiden var at alle skulle kunne bruke den. Ettersom mange bruker tastaturet til å navigere nettsider på bakgrunn av preferanser eller sykdom, har vi lagt til en navigeringsfunksjon som vises ved første tabuleringstrykk. Her kan man enkelt og raskt komme seg til de diverse delene av nettstedet. Nettsiden og nødvendige funksjonaliteter skal fungere dersom JavaScript blir deaktivert.</p>
+
+    </div>
+
+    <div class="mainContentBox" id="del6">
+      <div class="sixthContentHeader">
         <h2>REFERANSER & KILDER</h2>
       </div>
       <p>
@@ -185,11 +192,14 @@ Prototypen støtter i dag arabisk og norsk. Dersom den blir ferdigutviklet vil d
                 Problemet
               </a></li>
               <li><a href="#del2">
-                App og videreutvikling
+                Løsningen
               </a></li>
               <li><a href="#del3">
-                Brukertesting
+                Om applikasjonen
               </a></li>
+              <li><a href="#del4">Brukertesting</a> </li>
+              <li><a href="#del5">Design av webside</a> </li>
+              <li><a href="#del6">Referanser og kilder</a> </li>
               <li><a href="#">
                 <img src="ressurser/united-kingdom.png" alt="Site in English">
               </a></li>
