@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	background: linear-gradient(0deg, #f5f7fa, #c3cfe2), url("ressurser/square_bg.png");
+	background: radial-gradient(ellipse at center, #cfd9df, #e2ebf0), url("ressurser/square_bg.png");
 	background-blend-mode: overlay;
 	background-repeat: repeat;
 }
