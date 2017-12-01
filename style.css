@@ -384,6 +384,9 @@ transition: all 0s;
 	border-bottom: 1px solid #333333;
 	transition: all 0.3s ease-in-out;
 }
+.sideBarBox a {
+	display:block;
+}
 .UKflag {
 	border-bottom: 0px !important;
 }
