@@ -142,7 +142,7 @@ body {
 	font-size: 200%;
 	font-style: italic;
 	position: relative;
-	margin-bottom: 0 !important;
+	margin:5% !important;
 }
 
 .mainContentBox {
@@ -162,7 +162,7 @@ body {
 }
 
 .mainContentBox p {
-	margin: 5% 5% 5% 5%;
+	margin: 1% 5% 2.5% 5%;
 }
 
 ol {
@@ -189,6 +189,7 @@ button {
 	color: white;
 	font-size: 16px;
 	box-shadow: 1px 2px 2px #000000;
+	margin:0 0 2% 5%;
 
 }
 button:hover{
@@ -351,11 +352,19 @@ transition: all 0s;
 	margin-left: 2%;
 }
 
-#ipad {
+.floatRightBilde {
 	float: right;
-	width: 300px;
+	max-width: 300px;
 	margin-top: 5%;
 	margin-right: 5%;
+
+}
+.figcaption {
+	float:right;
+}
+.bildetekst {
+	width:300px;
+	float:right;
 }
 
 #accessibilityBox {
@@ -532,7 +541,15 @@ transition: all 0s;
 		background-position: center;
 	}
 
-
+	.floatRightBilde {
+		float:none;
+		display:block;
+		margin:0 auto;
+	}
+	.bildetekst {
+		float:none;
+		margin:0 auto;
+	}
 
 	.appOverlay {
 	  background-color: #fefefe;
