@@ -501,6 +501,9 @@ transition: all 0s;
 	font-family: sans-serif;
 	line-height: 1.6;
 }
+#accessibilityBox p {
+	text-align:center;
+}
 
 
 .hidden {
