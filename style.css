@@ -205,6 +205,7 @@ figure {
 	margin:0;
 }
 
+
 .bildetekst {
 	position: relative;
 	width:300px;
@@ -214,7 +215,6 @@ figure {
 	text-align: center;
 	font-style: italic;
 
-	z-index: 3;
 
 }
 
