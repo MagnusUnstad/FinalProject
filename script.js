@@ -1,22 +1,7 @@
-/* Dette scriptet lager underlinjer med gradient */
-/*
-function gradient() {
-    let gradient = 1;
-    let lis = document.getElementById("sBB").getElementsByTagName("li");
-    for (let i = 0; i < lis.length; i++) {
-        gradient -= (1 / lis.length);
-        lis[i].style.borderBottom = "2px solid rgba(240,52,52," + gradient + ")";
-    }
-}
-gradient(); */
-
-
-
 /* Script for tab-funksjon. Åpner accessibilityBox hvis man trykker på tab */
 let pressNr = 0; //Hvor mange trykk
 let hvorMangeLinker = 7; //Denne MÅ være på antall linker i menyen
 document.addEventListener("keydown", function(event) {
-
     if (event.keyCode == 9 && !(event.shiftKey)) {
         pressNr++;
         onTabPress();
@@ -24,6 +9,12 @@ document.addEventListener("keydown", function(event) {
     if (event.keyCode == 9 && event.shiftKey) { //For å gå tilbake
       pressNr--;
       return;
+    }
+    if (event.keyCode == 81) { //q, åpner menyen anytime
+      pressNr = 1;
+      onTabPress();
+      document.getElementById("firstAccessibilityLink").focus();
+      document.getElementById("firstAccessibilityLink").scrollIntoView();
     }
 });
 
@@ -36,6 +27,7 @@ function onTabPress() {
             box.classList.toggle("hidden");
         }
     }
+
 
 //Script for progressbar og sticky sidebar
 let maxHeight = document.body.offsetHeight - window.innerHeight; //Høyden på hele siden
@@ -94,7 +86,7 @@ const popupKryss = document.getElementById('popupKryss'); //lukkeknapp
 
 
 
-//Lukker popupene ved klikk utenfor popupen
+//Lukker popupene ved klikk utenfor popupene, eller ved trykk på lukkeknappen
 window.onclick = function(event) {
     if (event.target == videoOverlay || event.target == appOverlay || event.target == popupKryss || event.target == popupKryss1) {
       videoOverlay.style.display = "none";
@@ -102,4 +94,17 @@ window.onclick = function(event) {
       introvideo.pause();
 
     }
+}
+
+
+//Setter tabindex på alle maincontentboxes og a-tags
+const atags = document.getElementsByTagName('a');
+const contentBoxes = document.getElementsByClassName('mainContentBox');
+for (let i = 0; i < atags.length; i++) {
+  atags[i].setAttribute("tabindex", 1);
+}
+
+
+for (let i = 0; i < contentBoxes.length; i++) {
+  contentBoxes[i].setAttribute("tabindex", 1);
 }
