@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Omsorg</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <!-- Meta Description -->
+  <meta name="description" content="Omsorg is an application that will change the way the healthcare sector works when faced with language barriers among healthcare professionals and patients.">
+</head>
+
+<body>
+  <!-- Om du endrer på denne, husk å endre antall linker i script.js linje 17! -->
+  <div id="accessibilityBox" class="hidden">
+    <ul>
+      <li><a href="#del1" id="firstAccessibilityLink">
+        The problem
+      </a></li>
+      <li><a href="#del2">
+        The solution
+      </a></li>
+      <li><a href="#del3">
+        About the application
+      </a></li>
+      <li><a href="#del4">User testing</a> </li>
+      <li><a href="#del5">Webdesign</a> </li>
+      <li><a href="#del6">References</a> </li>
+      <li><a href="index.html" lang="no">Side på Norsk</a></li>
+    </ul>
+    <p>Press <b>Q</b> to open or close the menu at any time.</p>
+  </div>
+
+
+  <div class="forsideContainer">
+
+    <div class="header">
+      <h1>OMSORG</h1>
+    </div>
+    <noscript>
+      <p class="noscript">This site uses JavaScript. If your browser does not support JavaScript, you can press
+        <a href="ressurser/introvideo.mp4">heer</a> to view the animation.
+      </p>
+    </noscript>
+    <div class="forsidesirkel">
+      <img src="ressurser/legenPlayEnglish.svg" id="legen" alt="Omsorg logo">
+    </div>
+
+      <!-- popup -->
+
+    <div id="popup" class="popup">
+      <!-- popup content -->
+      <div class="videoOverlay">
+        <a href="#" title="Lukk video">
+          <i class="fa fa-times-circle-o fa-2x popupKryss" id="popupKryss"></i>
+        </a>
+        <video id="video" title="Video that demonstrates a situation where communication tool Omsorg is being used" src="ressurser/introvideo.mp4" class="video" loop muted controls></video>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- popup for app -->
+  <div id="appPopup" class="popup">
+    <!-- popup content -->
+    <div class="appOverlay">
+      <a href="javascript:;" title="Tilbake">
+        <i class="fa fa-times-circle-o fa-2x popupKryss" id="popupKryss1"></i>
+      </a>
+      <iframe width="400" height="532" src="https://xd.adobe.com/embed/08f6b3cf-7eed-486d-abf0-b874fa8c6e2e/"  allowfullscreen title="Omsorg prototype"></iframe>
+    </div>
+  </div>
+
+
+  <main class="sideContainer" role="main">
+    <div class="mainContentBox" id="del1">
+      <div class="mainContentHeader">
+        <div class="logo" title="Omsorg Logo" aria-hidden="true"></div>
+      </div>
+
+      <p class="sitat"><i class="fa fa-quote-left" aria-hidden="true"></i> Omsorg breaks down the language barrieres between patient and healthcare professional
+          <i class="fa fa-quote-right" aria-hidden="true"></i>
+      </p>
+
+      <p>
+        Language barriers are a well known problem in the Norwegian health system. Patients that have a limited understanding of Norwegian or English do not get the information they have a right to know. Interpreters with sufficient competence can be unavailable, and often have a fair distance to travel. The current solutions for translation between patient and health professionals are complicated, time consuming and may cause confusion in situation where information can be a matter of life and death. Part of everyday life for health professionals is to meet people with different language backgrounds and from other cultures. Language barriers and lack of cultural competence can affect the patient's confidence in the healthcare system. The importance of tools that ensure reliable communication has never been greater.
+      </p>
+
+      <p class="floatLeftParagraph">
+
+Today, we have solutions that sometimes work, but are unnecessarily complicated. Misconceptions and confusion can easily occur. “Pekeark” (see illustration), one of today's most used solutions, can be thick booklets with columns full of questions, statements and icons in both Norwegian and the patient's preferred language. They are often made specifically to each hospital by the enthusiasts in the health care system. The translations are often from Google translate and may therefore become misleading when accurate communication is essential. This is cumbersome and outdated. It also takes unnecessary time to scroll through all the sheets to find the right questions, especially when lack of time is generally a problem in the healthcare system.
+      </p>
+
+      <div class="bildetekst">
+        <figure>
+          <a href="https://i.imgur.com/WHg78nc.png"><img src="ressurser/pekeark.gif" alt="'Pekeark', Cut-out from communication folder, Sykehuset Østfold" class="floatRightBilde"></a>
+          <figcaption>
+            Cut-out from <a href="https://sykehuset-ostfold.no/flerkultur-pa-sykehuset-hva-bor-vi-som-helsearbeidere-vite/kommunikasjonsperm-pa-flere-sprak" target="_blank">Communication folder, Sykehuset Østfold</a> (opens in new tab)
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="floatLeftParagraph">Google Translate is often used, but has been known as a bad translator for many years. In some situations it might be vital to find the correct information. Google Translate may have problems with similar words, and important details may disappear in the translation. This underlines the importance of pre-produced and good translations made by professionals.</p>
+
+
+      <p class="floatLeftParagraph">Anyone living in Norway is entitled to the necessary health care, cf. the Act relating to patients' rights [Patients' Rights Act]  Of 02.07.1999, § 2-1a. If you need an interpreter you are also entitled to this, cf. § 3-2. The problem is that many people do not get enough information about their rights. It is also those who do not understand that they need or are have the right to get an interpreter. The result is that many meet the health service unable to communicate.</p>
+      <p class="floatLeftParagraph">The Norwegian Tolketjenesten (Interpreter services) is very good, and Oslo University Hospital wants a medical interpreter to be used primarily, so the patient can receive the best treatment. The solution we will present later will be used mainly when an interpreter is en route, or otherwise not available. </p>
+
+      <p class="floatLeftParagraph">Never before have so many patients had a need for translation in Norwegian healthcare. Labor immigrants, refugees and immigrants with a lack of Norwegian knowledge are increasing. 4.1% of Norway's population has refugee background, which accounts for 30% of all immigrants. The refugee stream we have experienced in recent years has led many to meet a health service they can not communicate with. Such a vulnerable group in society is dependent on relationship building and a health care system they trust, who can safeguard and understand their needs. In all groups we also find people with disabilities and illiterates, or people with low competence in their native language. Today's solutions do not address the needs of these groups for help in the form of translation tools that are universally designed and culture-sensitive.
+</p>
+      <p class="floatLeftParagraph">One of the problems that Oslo University Hospital focuses on is misunderstandings. Often they experience the patient and health worker believing they have understood each other, but then it appears at a later time that they have perceived different messages. Information about medical tests, new appointments and visitation times is lost. It is important that such details do not disappear in the translation.
+Today's solution is inadequate and old-fashioned. The application we are going to present will help the health service in difficult situations and ensure that patients receive the help and information they are entitled to.
+      </p>
+    </div>
+
+    <div class="mainContentBox" id="del2">
+      <div class="secondContentHeader">
+        <h2>THE SOLUTION</h2>
+      </div>
+
+      <p>The language application “Omsorg” is our solution to the comprehensive language and cultural problem in Norwegian health care. In cooperation with counselor Maja G. Kielland at Oslo University Hospital, we have prototyped an application that can break the language barriers. The application is a language tool that helps health professionals with simple instant translations in different situations at the hospital. A stylish and clean design makes it fit into hospitals, and building on principles of universal design makes the application accessible to all.</p>
+
+      <p>We have made an interactive prototype of our application. The prototype today supports Arabic and Norwegian. If we complete the development, it will initially support 10 different languages. All statements and questions translated into the application will be translated in advance by professional translators. This minimizes the likelihood of misunderstandings. The application should also contain information about medical tests and events related to the individual patient. Information about food and visits to the relevant department should also be available to patients in their native language.
+</p>
+
+
+
+
+
+    </div>
+
+    <div class="mainContentBox" id="del3">
+      <div class="thirdContentHeader">
+        <h2>ABOUT THE APPLICATION</h2>
+      </div>
+      <p>Throughout the development process, there has been focus on creating a product that anyone can use. Universal design and clear contrasts have been important. Our application has a high-contrast setting, which can be selected in the hamburger menu. This will make all colors change to yellow, white and black. We are also working on developing a mode for the visually impaired. The idea is that health workers should be able to ask questions translated by the app, while the patient gives thumbs up for yes and thumb down for no. This ensures that low vision users get equal access to the application. The application should read everything out loud, if  the "auto sound" setting is on. If this is off, things will be read out loud when you press the audio icon, which can be found on all categories and questions.</p>
+      <p>We also take cultural sensitivity into account. When Arabic, which is read from right to left, is chosen as a language, the application becomes “mirrored”. Our solution has full right-to-left support. We have taken great care to make the icons in our application easily understandable and recognizable. </p>
+      <h3>Module 1 - Communication</h3>
+
+      <p class="floatLeftParagraph">It is our recommendation to try the application yourself to get a clear outlook on how it works. Please remember it is a prototype, and not all functions are operational now. All functional buttons will light up if the user clicks anywhere that is without a function. The communication module is the core of the application. The module is built to achieve to way communication between patient a healthcare worker. Both patient and healthcare worker can click on sayings or ask questions. The starts the conversation is controlled by the button on top. If the button is set to the doctor icon would a question be something like “are you thirsty?”.  On the patient side, this would rather be “I am thirsty”. A conversation can then be evolved based on the starting point.
+  </p>
+  <div class="bildetekst2">
+    <figure>
+    <img src="ressurser/ipad.png" alt="Montasje av en iPad satt opp med vår app" class="floatRightBilde">
+    <figcaption>Mockup of an iPad with the Omsorg app. <b>Test the prototype:</b> We have developed an interactive, online prototype of Omsorg. Test it by pressing the button below!
+
+          <br>
+          <noscript>
+          <p class="noscript">This site uses JavaScript. If your browser does not support JavaScript, you can press
+            <a href="https://xd.adobe.com/embed/08f6b3cf-7eed-486d-abf0-b874fa8c6e2e/">here</a> to open the prototype.
+          </p>
+        </noscript>
+          <button type="button" name="button" id="openApp" tabindex="1">Try the prototype</button></figcaption></figure>
+  </div>
+  <p class="floatLeftParagraph">The application will always ask the patient if they understand at the end of the conversation. Then both healthcare worker and patient will have a conformation that everything is understood. This helps build understanding and trust between patient and healthcare worker.</p>
+  <h3 class="floatLeftParagraph">Module 2 – Events</h3>
+  <p class="floatLeftParagraph">To save this information a health worker must log into the application and choose the bedpost for the patient. All patient who require a translation will receive a registered user while attending the hospital. On that user, they can save room number, bedpost and food preferences. Preferences like allergies, halal or vegan food. When someone is logged in, future notifications and events that are created will be saved.</p>
+    </div>
+
+    <div class="mainContentBox" id="del4">
+      <div class="fourthContentHeader">
+        <h2>USER TESTING</h2>
+      </div>
+      <p>
+        Throughout the entire development process, the application has been user tested. Multiple students have tested the application during production and given valuable feedback. Maja from The Oslo University Hospital have tested the application and given feedback on their expectations as well. Frequent communication with our client have been very useful for the development of this project.
+      </p>
+      <p>A user test was also performed on three medical students.  They will be the biggest user group of our product, and are thus very relevant to test the application on. The feedback was great, and they recognized the application as a tool that was in large demand within health care. Some had already experience language barriers themselves and told us such a tool would have been useful. Most of them found the user interface easy to use and found the application relatively intuitive. Some experienced problems when trying to understand the log-in process on module 2, and we used that information to make the necessary changes.</p>
+    </div>
+
+    <div class="mainContentBox" id="del5">
+      <div class="fifthContentHeader">
+        <h2>WEBDESIGN</h2>
+      </div>
+      <p>What platform the user has should not affect how well information is provided when visiting our website. Therefore, there is a lot of work put into making the website user friendly for computer screens, mobile phones and tablets alike.  The site is responsive and works just as well on all platforms. The site uses JavaScript, but is not dependent on it. That is just for a better user experience.</p>
+      <p>The site is functional in all popular browser (Chrome, FireFox, Edge and Internet Explorer). Accessibility and user friendliness have been a major focus when designing the website. A lot of users use the keyboard to browse the Internet because of preference or sickness, so a navigation function using tab was added. This is useful for quickly and easily browsing the entire website. </p>
+
+
+    </div>
+
+    <div class="mainContentBox" id="del6">
+      <div class="sixthContentHeader">
+        <h2>REFERENCES</h2>
+      </div>
+      <p>
+        <a href="https://www.flickr.com/photos/neccorp/14445634744">Picture</a> by <a href="https://www.flickr.com/photos/neccorp/collections/72157645227827765/">NEC Corporation of America</a>, <a href="https://creativecommons.org/licenses/by/2.0/">Creative Commons license <i class="fa fa-creative-commons" aria-hidden="true"></i></a>.<br>
+        Font Awesome, <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a><br>
+        <a href="https://www.toptal.com/designers/subtlepatterns/transparent-square-tiles/">Transparent Square Tiles</a> by <a href="http://nspady.com/">Nathan Spadt</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0 <i class="fa fa-creative-commons" aria-hidden="true"></i></a>
+      </p>
+    </div>
+
+    <div class="sideBarBox sticky" id="slider">
+      <div class="sideBarBoxHeader" id="scrollColor">
+        <h2>Meny</h2>
+      </div>
+
+      <!-- Hamburger meny for mobil -->
+      <nav role="navigation">
+        <div id="sBB">
+          <div id="menuToggle">
+            <label for="menybutton" hidden>Meny</label>
+            <input id="menybutton" title="Meny" class="hiddenOnDesktop" type="checkbox" />
+            <div id="menuBakgrunn">
+              <div id="mBSirkel"></div>
+            </div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <li class="grad1"><a href="#del1">
+                The Problem
+              </a></li>
+              <li class="grad2"><a href="#del2">
+                The Solution
+              </a></li>
+              <li class="grad3"><a href="#del3">
+                About the application
+              </a></li>
+              <li class="grad4"><a href="#del4">User testing</a> </li>
+              <li class="grad5"><a href="#del5">Webdesign</a> </li>
+              <li class="grad6"><a href="#del6">References</a> </li>
+              <li class="UKflag grad7"><a href="index.html">
+                <img src="ressurser/Norway.png" alt="Side på Norsk" lang="no">
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div style="height:50px"></div>
+    <!-- spacer div for å få litt margin på bunn -->
+
+    <div class="progressbar-bak">
+      <div id="progressbar-frem"></div>
+    </div>
+    <script src="script.js"></script>
+  </main>
+</body>
+
+<!-- Her en en kommentar -->
+
+</html>
