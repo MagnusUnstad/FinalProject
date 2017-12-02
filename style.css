@@ -663,7 +663,7 @@ transition: all 0s;
 		width: 100px;
 		top: -0.2em;
 		left: 40%;
-
+		box-shadow: 0 3px 6px -6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 		z-index: 0;
 	}
 
