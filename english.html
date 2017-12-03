@@ -46,7 +46,9 @@
       </p>
     </noscript>
     <div class="forsidesirkel">
-      <img src="ressurser/legenPlayEnglish.svg" id="legen" alt="Omsorg logo">
+      <a href="javascript:visVideo();">
+        <img src="ressurser/legenplayno.svg" id="legen" alt="Omsorg logo">
+      </a>
     </div>
 
       <!-- popup -->
@@ -54,7 +56,7 @@
     <div id="popup" class="popup">
       <!-- popup content -->
       <div class="videoOverlay">
-        <a href="#" title="Lukk video">
+        <a  href="javascript:lukk()" title="Lukk video">
           <i class="fa fa-times-circle-o fa-2x popupKryss" id="popupKryss"></i>
         </a>
         <video id="video" title="Video that demonstrates a situation where communication tool Omsorg is being used" src="ressurser/introvideoenglish.mp4" class="video" loop muted controls></video>
@@ -67,7 +69,7 @@
   <div id="appPopup" class="popup">
     <!-- popup content -->
     <div class="appOverlay">
-      <a href="javascript:;" title="Tilbake">
+      <a href="javascript:lukk()" title="Tilbake">
         <i class="fa fa-times-circle-o fa-2x popupKryss" id="popupKryss1"></i>
       </a>
       <iframe width="400" height="532" src="https://xd.adobe.com/embed/08f6b3cf-7eed-486d-abf0-b874fa8c6e2e/"  allowfullscreen title="Omsorg prototype"></iframe>
