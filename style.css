@@ -187,6 +187,9 @@ h3 {
 .floatLeftParagraph {
 	position: relative;
 }
+.width60 {
+	max-width:60%;
+}
 
 .mainContentBox p {
 	margin: 1% 5% 2.5% 5%;
@@ -229,6 +232,7 @@ figure {
 
 
 .bildetekst2 {
+
 	width:300px;
 	float:right;
 	margin-right: 7%;
