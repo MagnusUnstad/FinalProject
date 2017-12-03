@@ -105,10 +105,10 @@ function lukk() {
 const atags = document.getElementsByTagName('a');
 const contentBoxes = document.getElementsByClassName('mainContentBox');
 for (let i = 0; i < atags.length; i++) {
-  atags[i].setAttribute("tabindex", 1);
+  atags[i].setAttribute("tabindex", 0);
 }
 
 
 for (let i = 0; i < contentBoxes.length; i++) {
-  contentBoxes[i].setAttribute("tabindex", 1);
+  contentBoxes[i].setAttribute("tabindex", 0);
 }
