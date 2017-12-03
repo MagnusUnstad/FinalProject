@@ -80,6 +80,7 @@ function visApp() {
 }
 
 
+
 const videoOverlay = document.getElementById('popup'); //video
 const appOverlay = document.getElementById('appPopup'); //app
 const popupKryss = document.getElementById('popupKryss'); //lukkeknapp
@@ -95,7 +96,10 @@ window.onclick = function(event) {
 
     }
 }
-
+function lukk() {
+  videoOverlay.style.display = "none";
+  appOverlay.style.display = "none";
+}
 
 //Setter tabindex på alle maincontentboxes og a-tags
 const atags = document.getElementsByTagName('a');

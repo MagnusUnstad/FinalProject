@@ -66,8 +66,12 @@ h3 {
   margin: 0 auto;
   border-radius: 50%;
   background-color: rgba(255,255,255,0.7);
-
   transform: translate(-50%,-50%);
+}
+.forsidesirkel a:focus {
+	outline: 3px rgb(0,0,255) solid;
+	height:400px;
+	display:block;
 }
 
 .forsidesirkel img {
@@ -691,6 +695,8 @@ transition: all 0s;
     height: 300px;
     width: 300px;
   }
+
+
 
 	.header h1 {
 		font-size: 3em;
